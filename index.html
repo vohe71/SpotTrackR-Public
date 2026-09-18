@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpotTrackR – AGB, Datenschutz und Impressum</title>
+<meta name="description" content="Allgemeine Geschäftsbedingungen, Datenschutzerklärung und Impressum für die App SpotTrackR.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="de" href="index.html">
+<link rel="alternate" hreflang="en" href="index-en.html">
+<link rel="alternate" hreflang="x-default" href="index.html">
+<style>
+  :root{
+    --bg:#ffffff;
+    --bg-soft:#f5f6f8;
+    --bg-nav:rgba(255,255,255,.88);
+    --fg:#1b1d21;
+    --fg-muted:#5a6069;
+    --rule:#e2e5ea;
+    --accent:#1f6feb;
+    --accent-soft:#eaf1fd;
+    --maxw:44rem;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#15171a;
+      --bg-soft:#1d2024;
+      --bg-nav:rgba(21,23,26,.88);
+      --fg:#e6e8ea;
+      --fg-muted:#a0a6ae;
+      --rule:#2c3037;
+      --accent:#6ea8fe;
+      --accent-soft:#1c2939;
+    }
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%; scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--fg);
+    font:400 17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 1.25rem}
+
+  /* ---------- Kopf ---------- */
+  header.page{padding:3.25rem 0 1.5rem}
+  header.page h1{font-size:1.9rem; line-height:1.2; margin:0 0 .35rem; letter-spacing:-.02em}
+  header.page p.lead{margin:0; color:var(--fg-muted)}
+  .stand{display:inline-block; margin-top:1rem; padding:.2rem .6rem; border-radius:999px;
+         background:var(--bg-soft); color:var(--fg-muted); font-size:.82rem}
+
+  /* ---------- Sprungnavigation + Sprachumschalter ---------- */
+  nav.top{
+    position:sticky; top:0; z-index:10;
+    background:var(--bg-nav);
+    -webkit-backdrop-filter:saturate(180%) blur(12px);
+    backdrop-filter:saturate(180%) blur(12px);
+    border-bottom:1px solid var(--rule);
+  }
+  nav.top .navbar{
+    display:flex; align-items:center; gap:.75rem;
+    max-width:var(--maxw); margin-inline:auto; padding:.6rem 1.25rem;
+  }
+  nav.top ul{
+    display:flex; gap:.5rem; margin:0; padding:0; list-style:none;
+    flex:1 1 auto; min-width:0; overflow-x:auto;
+    scrollbar-width:none;
+  }
+  nav.top ul::-webkit-scrollbar{display:none}
+  nav.top a{
+    display:block; white-space:nowrap; text-decoration:none; color:var(--fg-muted);
+    font-size:.9rem; font-weight:500; padding:.3rem .7rem; border-radius:999px;
+  }
+  nav.top a:hover{color:var(--fg); background:var(--bg-soft)}
+  .lang{
+    display:flex; gap:.15rem; flex:0 0 auto;
+    background:var(--bg-soft); border-radius:999px; padding:.15rem;
+  }
+  .lang a{
+    font-size:.8rem; font-weight:600; letter-spacing:.03em;
+    padding:.25rem .55rem; border-radius:999px; color:var(--fg-muted);
+  }
+  .lang a:hover{color:var(--fg); background:transparent}
+  .lang a[aria-current="page"]{background:var(--accent-soft); color:var(--accent)}
+
+  /* ---------- Inhalt ---------- */
+  main{padding-bottom:4rem}
+  section.doc{padding-top:2.5rem; border-top:1px solid var(--rule); margin-top:2.5rem}
+  section.doc:first-of-type{border-top:0; margin-top:0}
+  h2{font-size:1.5rem; line-height:1.25; margin:0 0 .25rem; letter-spacing:-.015em}
+  h3{font-size:1.08rem; margin:2.25rem 0 .5rem; line-height:1.35}
+  h4{font-size:.98rem; margin:1.6rem 0 .4rem; color:var(--fg); line-height:1.4}
+  p{margin:0 0 .9rem}
+  ul{margin:0 0 .9rem; padding-left:1.25rem}
+  li{margin-bottom:.4rem}
+  a{color:var(--accent)}
+  strong{font-weight:600}
+  address{font-style:normal; margin:0 0 .9rem; color:var(--fg)}
+  hr{border:0; border-top:1px solid var(--rule); margin:2rem 0}
+
+  /* Anker nicht unter der Sticky-Nav verstecken */
+  section.doc,h2,h3,h4{scroll-margin-top:4.25rem}
+
+  .callout{
+    background:var(--bg-soft); border-left:3px solid var(--accent);
+    padding:1rem 1.1rem; border-radius:.35rem; margin:0 0 1.4rem;
+  }
+  .callout p:last-child{margin-bottom:0}
+
+  .translation-note{
+    font-size:.9rem; color:var(--fg-muted); font-style:italic;
+    margin:0 0 1.4rem;
+  }
+
+  .meta{margin:.6rem 0 1.2rem; padding-left:.9rem; border-left:2px solid var(--rule);
+        font-size:.93rem; color:var(--fg-muted)}
+  .meta p{margin:0 0 .25rem}
+  .meta p:last-child{margin-bottom:0}
+  .meta strong{color:var(--fg)}
+
+  .toc{background:var(--bg-soft); border-radius:.5rem; padding:1rem 1.25rem; margin:1.25rem 0 2rem}
+  .toc p{font-size:.8rem; text-transform:uppercase; letter-spacing:.06em;
+         color:var(--fg-muted); margin:0 0 .5rem; font-weight:600}
+  .toc ol{margin:0; padding-left:1.35rem; font-size:.94rem}
+  .toc li{margin-bottom:.25rem}
+  .toc a{text-decoration:none}
+  .toc a:hover{text-decoration:underline}
+
+  footer.page{border-top:1px solid var(--rule); padding:1.75rem 0 3rem;
+              color:var(--fg-muted); font-size:.9rem}
+  footer.page p{margin:0 0 .4rem}
+
+  @media (max-width:520px){
+    body{font-size:16px}
+    header.page{padding-top:2.25rem}
+    header.page h1{font-size:1.55rem}
+    h2{font-size:1.3rem}
+    nav.top .navbar{gap:.5rem; padding-inline:1rem}
+  }
+</style>
+</head>
+<body>
+
+<nav class="top" aria-label="Dokumentnavigation">
+  <div class="navbar">
+    <ul>
+      <li><a href="#agb">AGB</a></li>
+      <li><a href="#datenschutz">Datenschutzerklärung</a></li>
+      <li><a href="#impressum">Impressum</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+    <div class="lang">
+      <a href="index.html" hreflang="de" aria-current="page">DE</a>
+      <a id="lang-switch" data-base="index-en.html" href="index-en.html" hreflang="en" lang="en">EN</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<header class="page">
+  <h1>SpotTrackR – Rechtliche Hinweise</h1>
+  <p class="lead">Allgemeine Geschäftsbedingungen, Datenschutzerklärung und Impressum für die App SpotTrackR.</p>
+  <p><span class="stand">Stand: 13.09.2026</span></p>
+</header>
+
+<main>
+
+
+
+<!-- ==================== AGB ==================== -->
+<section class="doc" id="agb" aria-labelledby="agb-titel">
+  <h2 id="agb-titel">Allgemeine Geschäftsbedingungen (AGB) für SpotTrackR</h2>
+  <p class="lead" style="color:var(--fg-muted)">Stand: 13.09.2026</p>
+
+  <div class="toc">
+    <p>Inhalt</p>
+    <ol>
+      <li><a href="#agb-1">Geltungsbereich und Anbieter</a></li>
+      <li><a href="#agb-2">Vertragsschluss und Systemvoraussetzungen</a></li>
+      <li><a href="#agb-3">Leistungsbeschreibung</a></li>
+      <li><a href="#agb-4">Kostenfreiheit und freiwilliges Trinkgeld</a></li>
+      <li><a href="#agb-5">Widerrufsrecht</a></li>
+      <li><a href="#agb-6">Keine Navigations-, Rettungs- oder Sicherheitsfunktion</a></li>
+      <li><a href="#agb-7">Nutzungsrechte</a></li>
+      <li><a href="#agb-8">Apple-Dienste und Gerätefunktionen; keine Drittanbieter-Dienste</a></li>
+      <li><a href="#agb-9">Kartendarstellung</a></li>
+      <li><a href="#agb-10">Teilen und Empfangen von Orten</a></li>
+      <li><a href="#agb-11">Daten des Nutzers und Datensicherung</a></li>
+      <li><a href="#agb-12">Verfügbarkeit und Änderungen der App</a></li>
+      <li><a href="#agb-13">Haftungsbeschränkung</a></li>
+      <li><a href="#agb-14">Datenschutz</a></li>
+      <li><a href="#agb-15">Laufzeit und Kündigung</a></li>
+      <li><a href="#agb-16">Zusätzliche Bedingungen für die Nutzung auf Apple-Geräten</a></li>
+      <li><a href="#agb-17">Änderungen dieser AGB</a></li>
+      <li><a href="#agb-18">Schlussbestimmungen</a></li>
+    </ol>
+  </div>
+
+  <h3 id="agb-1">§ 1 Geltungsbereich und Anbieter</h3>
+  <p>(1) Diese Allgemeinen Geschäftsbedingungen (nachfolgend „AGB") gelten für die Nutzung der Applikation SpotTrackR (nachfolgend „App"), die im Apple App Store zum Download bereitgestellt wird. Anbieter der App ist:</p>
+  <address>
+    Volker Herrmann<br>
+    Am Dorfteich 11, 25462 Rellingen, Deutschland<br>
+    E-Mail: <a href="mailto:contact@rocktrackr.de">contact@rocktrackr.de</a>
+  </address>
+  <p>(nachfolgend „Anbieter")</p>
+  <p>(2) Die App kann von Nutzern jeden Alters verwendet werden. Minderjährige dürfen die App nur mit Zustimmung eines Erziehungsberechtigten nutzen und In-App-Käufe (Trinkgeld, § 4) nur mit dessen ausdrücklicher Genehmigung tätigen. Die Altersfreigabe der App im Apple App Store bleibt maßgeblich.</p>
+  <p>(3) Entgegenstehende oder abweichende Bedingungen des Nutzers werden nicht anerkannt, es sei denn, der Anbieter stimmt ihrer Geltung ausdrücklich schriftlich zu.</p>
+  <h3 id="agb-2">§ 2 Vertragsschluss und Systemvoraussetzungen</h3>
+  <p>(1) Durch den Download, die Installation oder die Nutzung der App erklärt sich der Nutzer mit diesen AGB einverstanden. Der Vertrag über die Nutzung der App kommt mit dem erstmaligen Start der App zustande.</p>
+  <p>(2) Die App ist vollständig kostenlos. Es gibt keine kostenpflichtige Vollversion, keine Abonnements und keine Funktionen, die gegen Entgelt freigeschaltet werden. Freiwillige Unterstützungszahlungen („Trinkgeld") sind in § 4 geregelt.</p>
+  <p>(3) Für die Nutzung der App ist ein kompatibles iPhone mit einer aktuell unterstützten Version von iOS erforderlich. Die aktuellen Mindestanforderungen sind in der App-Store-Beschreibung aufgeführt. Der Anbieter übernimmt keine Gewähr für die Kompatibilität mit sämtlichen Geräten oder Betriebssystemversionen.</p>
+  <p>(4) Einzelne Funktionen der App setzen zusätzliche Voraussetzungen voraus, insbesondere:</p>
+  <ul>
+    <li>die Erteilung der Systemberechtigung für den Standort sowie die Freigabe des genauen Standorts (Speichern von Plätzen, Richtung und Entfernung, Wegpunkte);</li>
+    <li>ein Gerät mit Kamera und Lagesensoren sowie die Erteilung der Kameraberechtigung (Einblendung der Richtung in das Kamerabild);</li>
+    <li>eine bestehende Internetverbindung (Darstellung der Karte).</li>
+  </ul>
+  <p>Liegen diese Voraussetzungen nicht vor, stehen die betreffenden Funktionen ganz oder teilweise nicht zur Verfügung; die übrigen Funktionen der App bleiben nutzbar. Ohne Standortfreigabe ist die App nicht sinnvoll nutzbar.</p>
+  <h3 id="agb-3">§ 3 Leistungsbeschreibung</h3>
+  <p>(1) Die App unterstützt den Nutzer darin, einen selbst gespeicherten Ort wiederzufinden. Sie umfasst insbesondere:</p>
+  <ul>
+    <li>sechs Speicherplätze, in denen der Nutzer seinen jeweils aktuellen Standort ablegen und die er umbenennen sowie mit Symbol und Farbe versehen kann;</li>
+    <li>die Rückführung zu einem gespeicherten Platz durch Richtungsanzeige (Pfeil bzw. Kompass) und Entfernungsangabe, auf Wunsch über einer Karte;</li>
+    <li>die Einblendung der Richtung und des Ziels in das Livebild der Kamera;</li>
+    <li>das Setzen von Wegpunkten entlang eines Weges sowie das Sichern und Laden benannter Strecken;</li>
+    <li>das Teilen eines gespeicherten Ortes über die Teilen-Funktion des Systems sowie die Übernahme von Orten, die dem Nutzer von außen zugehen (eigene Dateien der App, Kartenlinks, Koordinaten in Text, Orte aus Apple Karten);</li>
+    <li>Einstellungen zu Einheiten, Nordbezug, Darstellung, Haptik und Bildschirmverhalten.</li>
+  </ul>
+  <p>(2) Maßgeblich für den jeweils aktuellen Funktionsumfang sind die Darstellung in der App sowie die App-Store-Beschreibung.</p>
+  <p>(3) Richtung und Entfernung werden auf dem Gerät berechnet. Die App berechnet keine Route, keine Wege und keine Hindernisse: Angezeigt werden stets die Luftlinie zum gespeicherten Punkt und die zugehörige Richtung. Ob ein Weg dorthin existiert, begehbar, erlaubt oder gefahrlos ist, prüft die App nicht.</p>
+  <h3 id="agb-4">§ 4 Kostenfreiheit und freiwilliges Trinkgeld</h3>
+  <p>(1) Die App ist in ihrem vollen Funktionsumfang kostenlos nutzbar.</p>
+  <p>(2) Der Nutzer kann dem Anbieter über In-App-Käufe ein freiwilliges Trinkgeld in mehreren Stufen zukommen lassen. Das Trinkgeld ist eine reine Unterstützungszahlung: Es schaltet keine Funktionen frei, hebt keine Beschränkungen auf und begründet keinen Anspruch auf eine Gegenleistung, auf Support in bestimmter Form oder auf eine bestimmte Weiterentwicklung der App.</p>
+  <p>(3) Die Trinkgeld-Produkte sind technisch „verbrauchbare" Produkte (Consumables). Sie hinterlassen keine Berechtigung auf dem Gerät oder in der Apple-ID; eine Funktion „Käufe wiederherstellen" gibt es daher nicht und ist nicht erforderlich. Ein Trinkgeld kann mehrfach gegeben werden.</p>
+  <p>(4) Die Abwicklung sämtlicher Zahlungen erfolgt ausschließlich über Apple (App Store). Es gelten die Zahlungsbedingungen von Apple. Die Preise sind vor dem Kauf in der App und im App Store ausgewiesen. Der Anbieter hat keinen Zugriff auf Zahlungsdaten des Nutzers.</p>
+  <p>(5) Eine Erstattung bereits gezahlter Beträge richtet sich nach den Erstattungsrichtlinien von Apple und ist über den Apple Support zu beantragen.</p>
+  <p>(6) Der Anbieter behält sich vor, die Stufen und Preise des Trinkgelds zu ändern oder die Trinkgeld-Funktion einzustellen. Auf den Funktionsumfang der App hat dies keinen Einfluss.</p>
+  <h3 id="agb-5">§ 5 Widerrufsrecht</h3>
+  <p>(1) Der Download und die Nutzung der App begründen mangels Entgeltlichkeit kein Widerrufsrecht.</p>
+  <p>(2) Soweit ein Trinkgeld nach § 4 als Vertrag über die Bereitstellung digitaler Inhalte einzuordnen ist, gilt: Verbrauchern steht grundsätzlich ein gesetzliches Widerrufsrecht zu. Das Widerrufsrecht erlischt gemäß § 356 Abs. 5 BGB, sobald mit der Ausführung des Vertrags begonnen wurde, der Verbraucher ausdrücklich zugestimmt hat, dass mit der Ausführung vor Ablauf der Widerrufsfrist begonnen wird, und er seine Kenntnis vom Verlust des Widerrufsrechts bestätigt hat. Unabhängig davon steht dem Nutzer der Weg über die Erstattungsrichtlinien von Apple offen (§ 4 Abs. 5).</p>
+  <h3 id="agb-6">§ 6 Keine Navigations-, Rettungs- oder Sicherheitsfunktion</h3>
+  <p>(1) Die App ist ein Orientierungshilfsmittel für die private Freizeitnutzung. Sie ist <strong>kein</strong> Navigationssystem, <strong>kein</strong> Notruf- oder Rettungsmittel und <strong>kein</strong> Ersatz für Karte, Kompass, ein GPS-Navigationsgerät oder eine ortskundige Begleitung. Sie darf nicht als alleinige Grundlage für sicherheitsrelevante Entscheidungen verwendet werden, insbesondere nicht im Gebirge, auf dem Wasser, im Gelände ohne Wege, bei schlechter Sicht, in der Dunkelheit, im Luftverkehr, bei Rettungs- oder Sucheinsätzen oder in Notlagen.</p>
+  <p>(2) Die Genauigkeit der angezeigten Position, Richtung und Entfernung hängt von Umständen ab, auf die der Anbieter keinen Einfluss hat, insbesondere von der Qualität des Satellitenempfangs (Gebäude, Fahrzeuge, Täler, Bewuchs, Wetter), von der Kalibrierung und Störung des Magnetkompasses (Metall, Magnete, Elektronik, Fahrzeuge), von der vom Nutzer gewährten Ortungsgenauigkeit („Ungefährer Standort") sowie vom Zustand und der Leistungsfähigkeit des Geräts. Abweichungen von mehreren Metern bis zu mehreren hundert Metern sind möglich. Die App weist die ihr bekannte Ortungsgenauigkeit aus; diese Angabe ist selbst eine Schätzung des Betriebssystems.</p>
+  <p>(3) Die Nutzung der App erfordert Aufmerksamkeit für die Umgebung. Der Nutzer ist verpflichtet, sein Gerät nur dann zu betrachten, wenn es die Situation erlaubt. Dies gilt besonders für die Einblendung in das Kamerabild: Sie zeigt einen Ausschnitt der Umgebung und ersetzt nicht den eigenen Blick. Die Nutzung der App während des Führens eines Fahrzeugs ist untersagt.</p>
+  <p>(4) Ortung, Kartendarstellung, Sensoren und Kamera verbrauchen Energie. Der Nutzer ist selbst dafür verantwortlich, den Ladezustand seines Geräts im Auge zu behalten und sich nicht in eine Lage zu bringen, in der er auf ein funktionierendes Gerät angewiesen ist. Der Anbieter empfiehlt, sich auf Wegen, auf denen ein Verirren gefährlich werden kann, zusätzlich unabhängig von der App zu orientieren.</p>
+  <p>(5) Der Nutzer ist verpflichtet, geltendes Recht sowie die Rechte Dritter zu beachten, insbesondere Betretungs-, Naturschutz- und Hausrechtsregelungen sowie die Vorschriften über Bild- und Tonaufnahmen bei Nutzung der Kamera-Ansicht.</p>
+  <h3 id="agb-7">§ 7 Nutzungsrechte</h3>
+  <p>(1) Der Anbieter räumt dem Nutzer für die Dauer der Nutzung ein einfaches, nicht übertragbares, nicht unterlizenzierbares Recht ein, die App für private, nicht-kommerzielle Zwecke auf seinen eigenen Apple-Endgeräten zu nutzen, wie in den Nutzungsregeln der App Store Verkaufsbedingungen gestattet, wobei der Zugriff auch durch andere Accounts möglich ist, die über Family Sharing mit dem Käufer verbunden sind.</p>
+  <p>(2) Dem Nutzer ist es untersagt:</p>
+  <ul>
+    <li>die App oder Teile davon zu kopieren, zu modifizieren, zu dekompilieren, zu disassemblieren oder zurückzuentwickeln (Reverse Engineering);</li>
+    <li>die App ganz oder teilweise zu vermieten, zu verleasen, zu verkaufen, weiterzulizenzieren oder anderweitig kommerziell zu verwerten;</li>
+    <li>Schutzmechanismen oder technische Beschränkungen der App zu umgehen;</li>
+    <li>die App für rechtswidrige Zwecke zu nutzen, insbesondere zur Beobachtung, Verfolgung oder Überwachung anderer Personen.</li>
+  </ul>
+  <p>(3) Alle Rechte an der App, insbesondere Urheberrechte, Markenrechte und sonstige gewerbliche Schutzrechte, verbleiben beim Anbieter oder den jeweiligen Rechteinhabern.</p>
+  <h3 id="agb-8">§ 8 Apple-Dienste und Gerätefunktionen; keine Drittanbieter-Dienste</h3>
+  <p>(1) Die App nutzt keine Programmierschnittstellen (APIs) oder SDKs von Drittanbietern. Sie greift ausschließlich auf Dienste und Funktionen der Apple-Plattform zurück, insbesondere:</p>
+  <ul>
+    <li><strong>Apple Core Location</strong> – Ermittlung des Standorts und der Bewegungsrichtung auf dem Gerät;</li>
+    <li><strong>Apple Core Motion</strong> – Lage- und Bewegungsdaten des Geräts für die Richtungsanzeige;</li>
+    <li><strong>Kamera des Geräts (AVFoundation)</strong> – Livebild für die Einblendung der Richtung;</li>
+    <li><strong>Apple MapKit / Apple Karten</strong> – Darstellung der Karte sowie Erzeugung eines Kartenlinks beim Teilen eines Ortes;</li>
+    <li><strong>Apple StoreKit / App Store</strong> – Abwicklung des freiwilligen Trinkgelds;</li>
+    <li><strong>Teilen-Funktion und Teilen-Erweiterung des Systems</strong> – Ausgabe und Übernahme von Orten.</li>
+  </ul>
+  <p>(2) Der Anbieter betreibt keinen eigenen Server und keinen Proxy-Dienst. Die App verfügt über kein Nutzerkonto, keine Anmeldung und keine Synchronisation. Gespeicherte Plätze, Wegpunkte, Strecken und Nutzungsdaten werden nicht an den Anbieter übermittelt. Analyse-, Tracking- oder Werbedienste werden nicht eingesetzt.</p>
+  <p>(3) Für die Verfügbarkeit, Funktionsfähigkeit und Inhalte der genannten Apple-Dienste ist Apple verantwortlich. Ihre Nutzung kann den gesonderten Bedingungen und der Datenschutzerklärung von Apple unterliegen; der Nutzer wird gebeten, diese zur Kenntnis zu nehmen. Der Anbieter hat auf diese Dienste keinen Einfluss.</p>
+  <p>(4) Sollte ein von der App genutzter Apple-Dienst eingestellt, verändert oder dauerhaft nicht mehr verfügbar sein, ist der Anbieter berechtigt, diesen zu ersetzen oder die entsprechenden Funktionen der App anzupassen oder zu entfernen, ohne dass hieraus Ansprüche des Nutzers entstehen.</p>
+  <h3 id="agb-9">§ 9 Kartendarstellung</h3>
+  <p>(1) Das Kartenmaterial stammt von Apple (Apple Karten / MapKit). Der Anbieter gibt es lediglich wieder und macht es sich nicht zu eigen. Eine Gewähr für Richtigkeit, Vollständigkeit, Aktualität oder Verfügbarkeit des Kartenmaterials wird nicht übernommen.</p>
+  <p>(2) Die Kartendarstellung setzt eine Internetverbindung voraus. Besteht keine Verbindung, wird die Karte nicht angeboten; eine Offline-Karte enthält die App nicht. Richtungsanzeige, Entfernung und Wegpunkte arbeiten ohne Verbindung weiter.</p>
+  <p>(3) In der Karte dargestellte Wege, Pfade und Geländemerkmale sind keine Zusage, dass ein Weg existiert, begehbar, öffentlich zugänglich oder gefahrlos ist.</p>
+  <h3 id="agb-10">§ 10 Teilen und Empfangen von Orten</h3>
+  <p>(1) Ob, wann und mit wem der Nutzer einen gespeicherten Ort teilt, entscheidet allein der Nutzer über die Teilen-Funktion seines Geräts. Mit dem Teilen gibt der Nutzer eine Positionsangabe – je nach Weg zusätzlich den von ihm vergebenen Namen des Platzes – an den Empfänger heraus. Für die weitere Verwendung durch den Empfänger und für die Verarbeitung durch die gewählte Ziel-App oder den gewählten Dienst ist der Anbieter nicht verantwortlich.</p>
+  <p>(2) Der Nutzer ist verpflichtet, keine Orte zu teilen, deren Bekanntgabe Rechte Dritter verletzt, und Orte anderer Personen nicht ohne deren Einverständnis weiterzugeben.</p>
+  <p>(3) Für Inhalt und Richtigkeit von Orten, die der Nutzer aus fremden Quellen übernimmt (Dateien, Links, Textnachrichten), übernimmt der Anbieter keine Verantwortung. Die Übernahme eines empfangenen Ortes in einen belegten Speicherplatz überschreibt dessen Inhalt; der überschriebene Ort lässt sich nicht wiederherstellen.</p>
+  <h3 id="agb-11">§ 11 Daten des Nutzers und Datensicherung</h3>
+  <p>(1) Die vom Nutzer gespeicherten Plätze, Wegpunkte, Strecken und Einstellungen werden ausschließlich lokal auf dem Gerät gespeichert – auch in einem gemeinsamen Speicherbereich der App und ihrer Teilen-Erweiterung (App-Gruppe). Eine Synchronisation zwischen mehreren Geräten findet nicht statt. Der Anbieter hat auf diese Daten keinen Zugriff.</p>
+  <p>(2) Für die Sicherung seiner Daten ist der Nutzer selbst verantwortlich, insbesondere durch ein Geräte- oder iCloud-Backup. Der Anbieter schuldet weder eine Datensicherung noch die Wiederherstellung verlorener Daten.</p>
+  <p>(3) Die Deinstallation der App, das Zurücksetzen aller Plätze, das Überschreiben eines Platzes, das Löschen eines Wegpunktes oder das Laden einer gesicherten Strecke kann zum unwiederbringlichen Verlust der bisherigen Daten führen. Der Anbieter kann einen solchen Verlust nicht rückgängig machen.</p>
+  <p>(4) Ein Gerätewechsel überträgt die Daten der App nur, soweit sie in einem eingespielten Backup enthalten sind. Ohne Backup beginnt die App auf dem neuen Gerät mit leeren Speicherplätzen.</p>
+  <h3 id="agb-12">§ 12 Verfügbarkeit und Änderungen der App</h3>
+  <p>(1) Der Anbieter bemüht sich um eine möglichst unterbrechungsfreie Nutzbarkeit der App, übernimmt jedoch keine Gewähr für eine bestimmte Verfügbarkeit oder Fehlerfreiheit. Insbesondere bei technischen Störungen oder Umständen, die außerhalb des Einflussbereichs des Anbieters liegen (z. B. Ausfall oder Änderung von Apple-Diensten wie MapKit, Apple-seitige Einschränkungen, Änderungen der Ortungs- oder Sensor-Schnittstellen), kann es zu Einschränkungen kommen.</p>
+  <p>(2) Der Anbieter behält sich vor, die App jederzeit weiterzuentwickeln, Funktionen hinzuzufügen, zu ändern oder zu entfernen sowie die App insgesamt einzustellen. Der Anbieter ist insbesondere nicht verpflichtet, die Kompatibilität der App mit künftigen Versionen von iOS oder mit künftigen Geräten sicherzustellen.</p>
+  <p>(3) Bei der Einstellung der App informiert der Anbieter die Nutzer, soweit ihm dies möglich ist, mit angemessener Vorlaufzeit über die App-Store-Beschreibung.</p>
+  <h3 id="agb-13">§ 13 Haftungsbeschränkung</h3>
+  <p>(1) Der Anbieter haftet unbeschränkt für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit sowie für vorsätzlich oder grob fahrlässig verursachte Schäden und für Schäden aufgrund einer Garantieübernahme oder arglistigen Täuschung.</p>
+  <p>(2) Im Übrigen – insbesondere für leichte Fahrlässigkeit – ist die Haftung des Anbieters auf den Ersatz des vorhersehbaren, typischerweise eintretenden Schadens beschränkt, soweit eine wesentliche Vertragspflicht (Kardinalpflicht) verletzt wurde. Eine wesentliche Vertragspflicht ist eine Pflicht, deren Erfüllung die ordnungsgemäße Durchführung des Vertrags überhaupt erst ermöglicht und auf deren Einhaltung der Nutzer regelmäßig vertrauen darf.</p>
+  <p>(3) Für leicht fahrlässige Verletzung nicht wesentlicher Vertragspflichten haftet der Anbieter nicht.</p>
+  <p>(4) Der Anbieter haftet insbesondere nicht für:</p>
+  <ul>
+    <li>Schäden, die aus Entscheidungen entstehen, die der Nutzer auf Grundlage der App oder ihrer Anzeigen trifft, insbesondere für die Wahl eines Weges, für Verirren, für nicht wiedergefundene Orte oder Gegenstände, für versäumte Termine, Treffen, Abfahrts- oder Abflugzeiten sowie für Umwege und deren Folgen;</li>
+    <li>Abweichungen der angezeigten Position, Richtung, Höhe oder Entfernung von der Wirklichkeit, insbesondere infolge schlechten Satellitenempfangs, gestörter oder unkalibrierter Kompasssensoren, eingeschränkter Ortungsgenauigkeit oder Eigenheiten des Geräts;</li>
+    <li>die Richtigkeit, Vollständigkeit, Aktualität oder Verfügbarkeit des Kartenmaterials (Apple MapKit / Apple Karten); der Anbieter gibt diese Inhalte lediglich wieder und macht sie sich nicht zu eigen;</li>
+    <li>Inhalt und Richtigkeit von Orten, die der Nutzer aus fremden Quellen übernimmt, sowie Folgen des Teilens eigener Orte;</li>
+    <li>Datenverluste, soweit diese nicht auf eine grob fahrlässige oder vorsätzliche Pflichtverletzung des Anbieters zurückzuführen sind; dies gilt insbesondere für Verluste im Zusammenhang mit Deinstallation, Zurücksetzen, Überschreiben, Gerätewechsel oder unterbliebener Datensicherung;</li>
+    <li>Schäden, die darauf beruhen, dass der Nutzer die App entgegen § 6 als Navigations-, Rettungs- oder Sicherheitsmittel eingesetzt oder die Aufmerksamkeit für seine Umgebung vernachlässigt hat;</li>
+    <li>Schäden infolge eines entladenen, überhitzten, beschädigten oder nicht verfügbaren Geräts;</li>
+    <li>Störungen oder Ausfälle der App oder einzelner Funktionen, die auf höherer Gewalt, Maßnahmen von Apple (z. B. App-Store-Einschränkungen, Updates von iOS), Störungen von Apple-Diensten oder sonstigen Umständen außerhalb des Einflussbereichs des Anbieters beruhen;</li>
+    <li>wirtschaftliche Entscheidungen, Vermögensschäden oder sonstige mittelbare Schäden des Nutzers, die auf Basis der App oder ihrer Inhalte getroffen oder verursacht wurden.</li>
+  </ul>
+  <p>(5) Die App wird kostenlos bereitgestellt und ohne jegliche Gewährleistung zur Verfügung gestellt, soweit dies gesetzlich zulässig ist. Insbesondere übernimmt der Anbieter keine Gewähr dafür, dass die App fehlerfrei funktioniert, für einen bestimmten Zweck geeignet ist oder bestimmte Funktionsumfänge dauerhaft enthält.</p>
+  <p>(6) Soweit die Haftung des Anbieters nach den vorstehenden Regelungen nicht vollständig ausgeschlossen ist, ist sie der Höhe nach beschränkt auf den Betrag, den der Nutzer in den zwölf (12) Monaten vor dem schadensbegründenden Ereignis an den Anbieter gezahlt hat; da die App kostenlos ist, ist dies höchstens die Summe freiwillig geleisteter Trinkgelder. Diese Beschränkung gilt nicht für die in § 13 Abs. 1 genannten Fälle unbeschränkter Haftung.</p>
+  <p>(7) Schadensersatzansprüche des Nutzers gegen den Anbieter, die nicht auf einer vorsätzlichen oder grob fahrlässigen Pflichtverletzung oder auf der Verletzung von Leben, Körper oder Gesundheit beruhen, verjähren abweichend von den gesetzlichen Regelungen innerhalb von einem (1) Jahr ab Kenntnis des Nutzers von dem Schaden und dem Anbieter als Schuldner, spätestens jedoch drei (3) Jahre nach dem schadensbegründenden Ereignis.</p>
+  <p>(8) Die vorstehenden Haftungsbeschränkungen gelten auch für die persönliche Haftung der Mitarbeiter, Vertreter und Erfüllungsgehilfen des Anbieters.</p>
+  <p>(9) Die Haftung nach dem Produkthaftungsgesetz bleibt unberührt.</p>
+  <h3 id="agb-14">§ 14 Datenschutz</h3>
+  <p>(1) Der Anbieter verarbeitet personenbezogene Daten des Nutzers ausschließlich im Einklang mit der geltenden Datenschutz-Grundverordnung (DSGVO), dem Bundesdatenschutzgesetz (BDSG) sowie sonstigen anwendbaren Datenschutzvorschriften.</p>
+  <p>(2) Die vom Nutzer gespeicherten Orte, Wegpunkte, Strecken und Einstellungen verbleiben auf dem Gerät des Nutzers; der Anbieter erhebt und speichert sie nicht. Standortdaten werden nur verarbeitet, während die App im Vordergrund läuft; eine Ortung im Hintergrund findet nicht statt. Das Kamerabild wird ausschließlich live angezeigt und weder gespeichert noch übermittelt.</p>
+  <p>(3) Einzelheiten zur Datenverarbeitung, zu den Rechten des Nutzers sowie zu den genutzten Apple-Diensten sind in der gesonderten Datenschutzerklärung geregelt, die in der App sowie im App Store abrufbar ist. Die Datenschutzerklärung ist Bestandteil dieser AGB.</p>
+  <h3 id="agb-15">§ 15 Laufzeit und Kündigung</h3>
+  <p>(1) Das Nutzungsverhältnis wird auf unbestimmte Zeit geschlossen und kann vom Nutzer jederzeit durch Deinstallation der App beendet werden. Es entstehen keine laufenden Kosten und es bestehen keine Kündigungsfristen; Abonnements gibt es nicht.</p>
+  <p>(2) Der Anbieter ist berechtigt, den Zugang zur App aus wichtigem Grund fristlos zu sperren oder das Nutzungsverhältnis außerordentlich zu kündigen, insbesondere wenn der Nutzer gegen diese AGB oder geltendes Recht verstößt.</p>
+  <h3 id="agb-16">§ 16 Zusätzliche Bedingungen für die Nutzung auf Apple-Geräten</h3>
+  <p>(1) <strong>Vertragspartner:</strong> Der Nutzer erkennt an, dass dieser Vertrag ausschließlich zwischen dem Anbieter und dem Nutzer geschlossen wird und nicht mit Apple Inc. (nachfolgend „Apple"). Der Anbieter ist allein verantwortlich für die App und deren Inhalte.</p>
+  <p>(2) <strong>Wartung und Support:</strong> Der Anbieter ist allein verantwortlich für alle Wartungs- und Supportleistungen in Bezug auf die App, wie in diesen AGB festgelegt oder nach geltendem Recht erforderlich. Der Nutzer erkennt an, dass Apple keinerlei Verpflichtung zur Erbringung von Wartungs- oder Supportleistungen in Bezug auf die App hat.</p>
+  <p>(3) <strong>Gewährleistung:</strong> Im Falle einer mangelhaften Gewährleistung kann der Nutzer Apple benachrichtigen, und Apple wird gegebenenfalls den Kaufpreis für die App an den Nutzer zurückerstatten. Soweit gesetzlich zulässig, übernimmt Apple keine weiteren Gewährleistungspflichten in Bezug auf die App. Alle anderen Ansprüche, Verluste, Haftungen, Schäden, Kosten oder Ausgaben, die auf eine mangelhafte Gewährleistung zurückzuführen sind, liegen in der alleinigen Verantwortung des Anbieters.</p>
+  <p>(4) <strong>Produkthaftung und Rechtsansprüche:</strong> Der Anbieter und der Nutzer erkennen an, dass der Anbieter und nicht Apple dafür verantwortlich ist, Ansprüche des Nutzers oder Dritter im Zusammenhang mit der App zu bearbeiten (u. a. Produkthaftung, Verstöße gegen gesetzliche Anforderungen oder Verbraucherschutzrechte).</p>
+  <p>(5) <strong>Geistiges Eigentum Dritter:</strong> Für den Fall, dass ein Dritter behauptet, dass die App oder der Besitz und die Nutzung der App durch den Nutzer die geistigen Eigentumsrechte dieses Dritten verletzen, ist der Anbieter und nicht Apple allein für die Untersuchung, Verteidigung, Beilegung und Erledigung einer solchen Klage wegen Verletzung geistigen Eigentums verantwortlich.</p>
+  <p>(6) <strong>Rechtliche Konformität:</strong> Der Nutzer sichert zu, dass (i) er sich nicht in einem Land befindet, das einem Embargo der US-Regierung unterliegt oder von der US-Regierung als „terrorunterstützend" eingestuft wurde, und (ii) er nicht auf einer Liste der US-Regierung über verbotene oder eingeschränkte Parteien steht.</p>
+  <p>(7) <strong>Drittbegünstigte:</strong> Der Nutzer erkennt an und erklärt sich damit einverstanden, dass Apple und seine Tochtergesellschaften Drittbegünstigte dieser AGB sind und dass Apple nach der Annahme dieser AGB durch den Nutzer das Recht hat (und davon ausgegangen wird, dass Apple dieses Recht akzeptiert hat), diese AGB gegenüber dem Nutzer als Drittbegünstigter durchzusetzen.</p>
+  <h3 id="agb-17">§ 17 Änderungen dieser AGB</h3>
+  <p>(1) Der Anbieter behält sich vor, diese AGB aus sachlich gerechtfertigten Gründen (z. B. Änderungen der Rechtslage, neue Funktionen der App, geänderte technische Anforderungen) zu ändern.</p>
+  <p>(2) Änderungen der AGB werden dem Nutzer spätestens vier (4) Wochen vor ihrem beabsichtigten Inkrafttreten über einen In-App-Hinweis mitgeteilt. Die geänderten AGB werden dem Nutzer dabei im Volltext zugänglich gemacht.</p>
+  <p>(3) Die geänderten AGB gelten als angenommen, wenn der Nutzer ihnen innerhalb der App ausdrücklich zustimmt. Eine Zustimmung durch Schweigen oder bloßes Weiterverwenden der App erfolgt nicht.</p>
+  <p>(4) Stimmt der Nutzer den geänderten AGB nicht zu, ist der Anbieter berechtigt, das Nutzungsverhältnis zum Zeitpunkt des beabsichtigten Inkrafttretens der geänderten AGB zu kündigen.</p>
+  <p>(5) Klarstellende oder redaktionelle Änderungen, die keine wesentlichen Rechte oder Pflichten des Nutzers berühren, können ohne das vorstehende Verfahren vorgenommen werden.</p>
+  <h3 id="agb-18">§ 18 Schlussbestimmungen</h3>
+  <p>(1) Es gilt das Recht der Bundesrepublik Deutschland unter Ausschluss des UN-Kaufrechts (CISG). Für Verbraucher gilt diese Rechtswahl nur insoweit, als der durch zwingende Bestimmungen des Rechts des Staates, in dem der Verbraucher seinen gewöhnlichen Aufenthalt hat, gewährte Schutz nicht entzogen wird.</p>
+  <p>(2) Gerichtsstand für alle Streitigkeiten aus oder im Zusammenhang mit diesen AGB ist, soweit gesetzlich zulässig, der Sitz des Anbieters. Für Verbraucher gilt der gesetzliche Gerichtsstand.</p>
+  <p>(3) Die Europäische Kommission stellt unter <a href="https://ec.europa.eu/consumers/odr/">https://ec.europa.eu/consumers/odr/</a> eine Plattform zur Online-Streitbeilegung bereit. Der Anbieter ist nicht bereit und nicht verpflichtet, an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+  <p>(4) Sollte eine Bestimmung dieser AGB ganz oder teilweise unwirksam oder undurchführbar sein oder werden, berührt dies die Wirksamkeit der übrigen Bestimmungen nicht. An die Stelle der unwirksamen Bestimmung tritt die gesetzliche Regelung.</p>
+  <hr>
+  <p style="color:var(--fg-muted)">Stand: 13.09.2026 — SpotTrackR</p>
+</section>
+
+
+<!-- ==================== DATENSCHUTZ ==================== -->
+<section class="doc" id="datenschutz" aria-labelledby="ds-titel">
+  <h2 id="ds-titel">Datenschutzerklärung für SpotTrackR</h2>
+  <p class="lead" style="color:var(--fg-muted)">Stand: 13.09.2026</p>
+  <p>Der Schutz Ihrer persönlichen Daten ist mir ein besonderes Anliegen. In dieser Datenschutzerklärung informiere ich Sie darüber, welche Daten bei der Nutzung der App SpotTrackR verarbeitet werden.</p>
+  <div class="callout">
+    <p>Vorweg das Wichtigste: <strong>SpotTrackR kommt ohne Nutzerkonto aus, es gibt keinen Server des Anbieters, keine Synchronisation und keine Programmierschnittstellen (APIs) oder SDKs von Drittanbietern.</strong> Ihre gespeicherten Orte, Wegpunkte, Strecken und Einstellungen verbleiben auf Ihrem Gerät. Der Anbieter hat darauf keinen Zugriff. Ihr Standort wird nur verarbeitet, während die App im Vordergrund läuft; eine Ortung im Hintergrund findet nicht statt. Das Kamerabild wird ausschließlich live angezeigt und weder gespeichert noch übermittelt. Analyse-, Tracking- oder Werbedienste werden nicht verwendet.</p>
+  </div>
+
+  <div class="toc">
+    <p>Inhalt</p>
+    <ol>
+      <li><a href="#ds-1">Verantwortlicher</a></li>
+      <li><a href="#ds-2">Allgemeine Hinweise zur Datenverarbeitung</a></li>
+      <li><a href="#ds-3">Keine Registrierung, kein Nutzerkonto</a></li>
+      <li><a href="#ds-4">Daten, die in der App entstehen</a></li>
+      <li><a href="#ds-5">Gerätefunktionen und Systemberechtigungen</a></li>
+      <li><a href="#ds-6">Genutzte Apple-Dienste</a></li>
+      <li><a href="#ds-7">Keine Analyse, kein Tracking, keine Werbung</a></li>
+      <li><a href="#ds-8">Speicherdauer und Löschung</a></li>
+      <li><a href="#ds-9">Empfänger der Daten</a></li>
+      <li><a href="#ds-10">Datensicherheit</a></li>
+      <li><a href="#ds-11">Rechte der betroffenen Personen</a></li>
+      <li><a href="#ds-12">Kinder</a></li>
+      <li><a href="#ds-13">Änderungen dieser Datenschutzerklärung</a></li>
+    </ol>
+  </div>
+
+  <h3 id="ds-1">1. Verantwortlicher</h3>
+  <p>Verantwortlich für die Datenverarbeitung im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:</p>
+  <address>
+    Volker Herrmann<br>
+    Am Dorfteich 11, 25462 Rellingen, Deutschland<br>
+    E-Mail: <a href="mailto:privacy@rocktrackr.de">privacy@rocktrackr.de</a>
+  </address>
+  <p>Der Verantwortliche ist eine Einzelperson. Ein Datenschutzbeauftragter ist nicht bestellt, da hierzu keine gesetzliche Verpflichtung besteht.</p>
+  <h3 id="ds-2">2. Allgemeine Hinweise zur Datenverarbeitung</h3>
+  <p>Personenbezogene Daten werden nur verarbeitet, soweit dies zur Bereitstellung einer funktionsfähigen App sowie ihrer Inhalte und Leistungen erforderlich ist. Die Verarbeitung erfolgt ausschließlich im Rahmen der gesetzlichen Bestimmungen (DSGVO, BDSG, TDDDG).</p>
+  <p>Nahezu alle in dieser Erklärung beschriebenen Verarbeitungen finden ausschließlich lokal auf Ihrem Gerät statt. Daten, die Ihr Gerät nicht verlassen, werden vom Anbieter weder erhoben noch gespeichert oder ausgewertet.</p>
+  <h3 id="ds-3">3. Keine Registrierung, kein Nutzerkonto</h3>
+  <p>Die App erfordert keine Registrierung und keinen Login. Es werden keine Namen, E-Mail-Adressen, Telefonnummern oder sonstigen Kontodaten durch den Verantwortlichen erhoben oder gespeichert. Es findet keine Profilbildung und keine automatisierte Entscheidungsfindung im Sinne des Art. 22 DSGVO statt.</p>
+  <h3 id="ds-4">4. Daten, die in der App entstehen</h3>
+  <h4 id="ds-4-1">4.1 Gespeicherte Orte, Wegpunkte, Strecken und Einstellungen</h4>
+  <p>Wenn Sie einen Platz belegen oder einen Wegpunkt setzen, speichert die App die zu diesem Zeitpunkt ermittelte Position – geografische Breite und Länge, soweit verfügbar die Höhe, die vom Betriebssystem gemeldete Ortungsgenauigkeit sowie den Zeitpunkt der Messung. Hinzu kommen die von Ihnen gewählten Bezeichnungen, Symbole und Farben der Plätze, benannte gesicherte Strecken sowie Ihre Einstellungen (Einheiten, Nordbezug, Darstellung, Haptik, Bildschirmverhalten) und der Hinweis, ob die Einführung bereits gezeigt wurde.</p>
+  <p>Diese Daten liegen in der lokalen Ablage der App (Systemeinstellungsspeicher der App) und in einem gemeinsamen Speicherbereich von App und Teilen-Erweiterung (App-Gruppe). Beide Bereiche liegen ausschließlich auf Ihrem Gerät. Der gemeinsame Bereich ist erforderlich, damit ein über die Teilen-Funktion entgegengenommener Ort in Ihrem Raster ankommt.</p>
+  <p>Gespeicherte Positionen sind Standortdaten und können damit personenbezogene Daten sein. Eine Übermittlung dieser Daten an den Anbieter findet nicht statt. Der Anbieter hat keinen Zugriff auf diese Inhalte.</p>
+  <div class="meta">
+    <p><strong>Rechtsgrundlage:</strong> Soweit hierin überhaupt eine Verarbeitung durch den Verantwortlichen liegt, erfolgt sie zur Erfüllung des Nutzungsvertrags gemäß Art. 6 Abs. 1 lit. b DSGVO.</p>
+  </div>
+  <h4 id="ds-4-2">4.2 Keine Synchronisation; Aufnahme in Geräte-Backups</h4>
+  <p>Die App synchronisiert nichts. Es gibt keine iCloud-Synchronisation, keine Übertragung zwischen mehreren Geräten und keine Ablage in einer Cloud-Datenbank des Anbieters oder eines Dritten.</p>
+  <p>Sofern Sie auf Ihrem Gerät ein Backup eingerichtet haben (iCloud-Backup oder ein Backup auf Ihrem Computer), können die lokal gespeicherten Daten der App – wie die Daten anderer Apps – Teil dieses Backups werden. Das Backup ist eine Funktion Ihres Geräts; verantwortlich hierfür ist Apple bzw. Sie selbst. Der Anbieter hat auf Backups keinen Zugriff. Sie steuern dies in den Systemeinstellungen (Einstellungen → Apple-Account → iCloud → iCloud-Backup).</p>
+  <h4 id="ds-4-3">4.3 Teilen und Empfangen von Orten</h4>
+  <p>Über die Teilen-Funktion Ihres Geräts können Sie einen gespeicherten Ort weitergeben. Dabei verlassen die Koordinaten, soweit vorhanden Höhe, Genauigkeit und Messzeitpunkt sowie der von Ihnen vergebene Name des Platzes Ihr Gerät – je nach gewähltem Weg als Datei der App, als Text mit Koordinaten oder als Link auf Apple Karten. Wohin diese Angaben gelangen, bestimmen allein Sie mit der Auswahl von Empfänger, Ziel-App oder Zieldienst; für die dortige Verarbeitung ist der jeweilige Anbieter verantwortlich. An den Anbieter der App wird beim Teilen nichts übermittelt.</p>
+  <p>Umgekehrt können Sie Orte übernehmen, die Ihnen zugehen – als Datei der App, über die Teilen-Erweiterung (z. B. aus Apple Karten), über einen Kartenlink oder über Koordinaten in einer Nachricht. Die Verarbeitung findet auf Ihrem Gerät statt; ein übernommener Ort wird wie ein selbst gespeicherter Ort behandelt (Ziffer 4.1).</p>
+  <p>Bitte bedenken Sie: Ein geteilter Ort gibt eine Positionsangabe preis. Geben Sie Orte nur an Empfänger weiter, die diese Angabe erhalten sollen.</p>
+  <div class="meta">
+    <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Bereitstellung der von Ihnen aufgerufenen App-Funktion).</p>
+  </div>
+  <h3 id="ds-5">5. Gerätefunktionen und Systemberechtigungen</h3>
+  <h4 id="ds-5-1">5.1 Standort</h4>
+  <p>Die App bittet um die Erlaubnis, <strong>während der Nutzung</strong> auf den Standort Ihres Geräts zuzugreifen („Beim Verwenden der App"). Der Standort wird verwendet, um einen Platz oder Wegpunkt zu speichern, um Richtung und Entfernung zu einem gespeicherten Ort zu berechnen, um Ihre Position und Blickrichtung in der Karte darzustellen und um die Ankunft an einem Ort zu erkennen.</p>
+  <p>Dabei gilt:</p>
+  <ul>
+    <li>Die Standortermittlung läuft ausschließlich, während die App im Vordergrund geöffnet ist. Eine Ortung im Hintergrund, eine dauerhafte Aufzeichnung von Wegen oder eine Erstellung von Bewegungsprofilen findet nicht statt. Aufgezeichnet wird nur, was Sie selbst als Platz oder Wegpunkt ablegen.</li>
+    <li>Die Standortdaten werden nicht an den Anbieter und nicht an Dritte übermittelt.</li>
+    <li>Für eine brauchbare Rückführung benötigt die App den <strong>genauen</strong> Standort. Haben Sie nur den ungefähren Standort freigegeben, bittet die App – über den Systemdialog – um eine vorübergehende Freigabe des genauen Standorts. Diese Freigabe erteilt das Betriebssystem befristet; die App kann sie nicht verlängern.</li>
+    <li>Nach dem Speichern eines Ortes misst die App noch einige Sekunden nach und ersetzt den gespeicherten Wert, wenn eine genauere Messung derselben Stelle vorliegt. Die dabei verworfenen Messwerte werden nicht dauerhaft gespeichert.</li>
+  </ul>
+  <p>Die Erteilung der Berechtigung ist freiwillig. Ohne Standortfreigabe kann die App ihre Kernfunktion – das Speichern eines Ortes und das Zurückfinden – nicht erbringen.</p>
+  <div class="meta">
+    <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. a DSGVO (Einwilligung, erteilt über den Berechtigungsdialog des Betriebssystems).</p>
+    <p><strong>Widerruf:</strong> Jederzeit über die Systemeinstellungen (Einstellungen → Datenschutz &amp; Sicherheit → Ortungsdienste → SpotTrackR). Der Widerruf berührt nicht die Rechtmäßigkeit der bis dahin erfolgten Verarbeitung.</p>
+  </div>
+  <h4 id="ds-5-2">5.2 Kamera</h4>
+  <p>Auf Geräten mit Kamera kann die App die Richtung zu Ihrem Ziel in das Livebild der Kamera einblenden. Hierfür fragt die App die Systemberechtigung für die Kamera ab, sobald Sie diese Ansicht erstmals öffnen.</p>
+  <p>Dabei gilt:</p>
+  <ul>
+    <li>Das Kamerabild wird ausschließlich live auf dem Bildschirm dargestellt. Es wird <strong>nicht</strong> aufgezeichnet, nicht gespeichert, nicht ausgewertet und nicht übermittelt – weder an den Anbieter noch an Dritte.</li>
+    <li>Es findet keine Bilderkennung, keine Gesichtserkennung und keine Objekterkennung statt. Die Einblendung wird allein aus Standort- und Lagedaten berechnet.</li>
+    <li>Verlassen Sie die Ansicht, wird die Kamera sofort beendet.</li>
+  </ul>
+  <p>Die Erteilung der Berechtigung ist freiwillig. Ohne Kamerafreigabe bleibt die App vollständig nutzbar; lediglich die Einblendung in das Kamerabild steht dann nicht zur Verfügung.</p>
+  <div class="meta">
+    <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. a DSGVO (Einwilligung, erteilt über den Berechtigungsdialog des Betriebssystems).</p>
+    <p><strong>Widerruf:</strong> Jederzeit über die Systemeinstellungen (Einstellungen → Datenschutz &amp; Sicherheit → Kamera → SpotTrackR).</p>
+  </div>
+  <h4 id="ds-5-3">5.3 Kompass- und Bewegungssensoren</h4>
+  <p>Für die Richtungsanzeige verwendet die App den Magnetkompass sowie die Lage- und Bewegungssensoren des Geräts. Diese Werte werden nur flüchtig im Arbeitsspeicher verarbeitet, um Pfeil, Kompass, Karte und Kamera-Einblendung auszurichten. Sie werden nicht gespeichert und nicht übermittelt. Eine gesonderte Systemberechtigung ist hierfür nicht erforderlich.</p>
+  <div class="meta">
+    <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO.</p>
+  </div>
+  <h4 id="ds-5-4">5.4 Kein Zugriff auf Fotos, Kontakte, Kalender, Mikrofon, Gesundheitsdaten oder Mitteilungen</h4>
+  <p>Die App fordert keinen Zugriff auf Ihre Fotomediathek, Ihre Kontakte, Ihren Kalender, Ihre Erinnerungen, Ihr Mikrofon, Ihr Adressbuch oder Gesundheitsdaten an. Die App versendet keine Mitteilungen und bittet nicht um die Mitteilungsberechtigung. Es werden keine Ton- oder Videoaufnahmen erstellt.</p>
+  <h3 id="ds-6">6. Genutzte Apple-Dienste</h3>
+  <p>Die App nutzt ausschließlich Dienste und Funktionen der Apple-Plattform. Ein eigener Server des Anbieters existiert nicht, ebenso wenig ein Proxy-Dienst. APIs oder SDKs von Drittanbietern werden nicht eingesetzt.</p>
+  <h4 id="ds-6-1">6.1 Apple MapKit / Apple Karten (Kartendarstellung)</h4>
+  <p>Für die optionale Kartenansicht lädt die App Kartenmaterial über Apple MapKit (Apple Inc., One Apple Park Way, Cupertino, CA 95014, USA, bzw. für Nutzer im Europäischen Wirtschaftsraum Apple Distribution International Ltd., Hollyhill Industrial Estate, Hollyhill, Cork, Irland). Die Anfrage erfolgt direkt von Ihrem Gerät an Apple; dabei werden technisch bedingt der dargestellte Kartenausschnitt und Ihre IP-Adresse an Apple übermittelt. Der Anbieter erhält weder die Anfragen noch die Ergebnisse.</p>
+  <p>Die Karte ist die einzige Funktion der App, die eine Internetverbindung nutzt. Besteht keine Verbindung, wird die Karte nicht angeboten; alle übrigen Funktionen arbeiten vollständig offline. Ihre gespeicherten Orte werden bei der Kartendarstellung nicht an Apple als Inhalt übermittelt; sie werden lokal auf die geladene Karte gezeichnet. Der geladene Kartenausschnitt richtet sich allerdings naturgemäß nach Ihrer Position und dem Ort, zu dem Sie zurückfinden möchten.</p>
+  <div class="meta">
+    <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Bereitstellung der von Ihnen aufgerufenen App-Funktion).</p>
+    <p><strong>Drittlandübermittlung:</strong> Apple kann Anfragen auf Servern in den USA verarbeiten und stützt sich hierbei auf Standardvertragsklauseln gemäß Art. 46 DSGVO sowie auf das EU-U.S. Data Privacy Framework.</p>
+    <p><strong>Weitere Informationen:</strong> <a href="https://www.apple.com/de/legal/privacy/">https://www.apple.com/de/legal/privacy/</a></p>
+  </div>
+  <h4 id="ds-6-2">6.2 Kartenlink beim Teilen</h4>
+  <p>Teilen Sie einen Ort als Text, enthält dieser neben den Koordinaten einen Link auf Apple Karten (maps.apple.com). Der Link wird auf Ihrem Gerät erzeugt; beim Erzeugen wird nichts übermittelt. Erst wenn Sie oder der Empfänger den Link öffnen, entsteht eine Verbindung zu Apple. Für die dortige Verarbeitung ist Apple verantwortlich.</p>
+  <h4 id="ds-6-3">6.3 In-App-Käufe (Apple App Store / StoreKit)</h4>
+  <p>Die App ist kostenlos. Sie bietet die Möglichkeit, dem Entwickler ein freiwilliges Trinkgeld zu geben. Die Abwicklung erfolgt ausschließlich über den Apple App Store; hierfür ruft die App die Produktangaben (Bezeichnung, Preis) bei Apple ab und übergibt eine Kaufanfrage an das System. Dabei werden technisch bedingt Ihre IP-Adresse und Angaben zu Ihrem Apple-Account an Apple übermittelt.</p>
+  <p>Der Anbieter erhält keine Zahlungsdaten, keine Apple-ID, keinen Namen und keine sonstigen Kontodaten. Auf dem Gerät wird lediglich lokal vermerkt, ob ein Trinkgeld gegeben wurde und wann zuletzt danach gefragt wurde, damit die App nicht erneut fragt; dieser Vermerk verlässt das Gerät nicht. Da es sich um verbrauchbare Produkte handelt, wird keine Berechtigung gespeichert und keine Wiederherstellung von Käufen angeboten.</p>
+  <div class="meta">
+    <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung).</p>
+    <p><strong>Verantwortlich für die Kaufabwicklung:</strong> Apple; es gelten die Datenschutzbestimmungen von Apple.</p>
+  </div>
+  <h4 id="ds-6-4">6.4 App-Store-Statistiken und Absturzberichte</h4>
+  <p>Apple stellt dem Anbieter im Rahmen von App Store Connect ausschließlich <strong>aggregierte und anonymisierte</strong> Statistiken zur Verfügung (z. B. Anzahl der Downloads, Absturzhäufigkeiten). Ein Rückschluss auf einzelne Personen ist dem Anbieter dabei nicht möglich. Ob Ihr Gerät Diagnose- und Nutzungsdaten an Apple sendet und ob diese an Entwickler weitergegeben werden, steuern Sie in den Systemeinstellungen (Einstellungen → Datenschutz &amp; Sicherheit → Analyse &amp; Verbesserungen). Ein eigenes Absturz- oder Fehlerberichtssystem setzt die App nicht ein.</p>
+  <h3 id="ds-7">7. Keine Analyse, kein Tracking, keine Werbung</h3>
+  <p>Die App enthält keine Analyse-, Tracking-, Attributions- oder Werbedienste und keine Werbe-SDKs. Es werden keine Werbe- oder Geräte-Identifikatoren (z. B. IDFA) ausgelesen, kein App-Tracking-Transparency-Dialog angezeigt und keine Nutzungsprofile erstellt. Die App zeichnet keine Bewegungsprofile auf. Ein Verkauf oder eine sonstige Weitergabe von Daten an Dritte zu Werbezwecken findet nicht statt.</p>
+  <h3 id="ds-8">8. Speicherdauer und Löschung</h3>
+  <ul>
+    <li><strong>Gespeicherte Orte, Wegpunkte, Strecken und Einstellungen:</strong> bis Sie sie in der App löschen, überschreiben oder zurücksetzen, längstens bis zur Deinstallation der App. Einzelne Plätze löschen Sie über das Menü der jeweiligen Kachel; sämtliche Orte entfernt „Alle Plätze zurücksetzen" in den Einstellungen.</li>
+    <li><strong>Standort-, Kompass- und Bewegungsdaten der laufenden Nutzung:</strong> nur flüchtig im Arbeitsspeicher, bis die App geschlossen oder in den Hintergrund versetzt wird.</li>
+    <li><strong>Kamerabild:</strong> nur während der Anzeige; es wird nicht gespeichert.</li>
+    <li><strong>Anfragen an MapKit:</strong> keine dauerhafte Speicherung durch den Anbieter. Für die Speicherdauer bei Apple gelten die Angaben von Apple.</li>
+    <li><strong>Trinkgeld:</strong> Der lokale Vermerk bleibt bis zur Deinstallation auf dem Gerät. Die Kaufinformationen verbleiben im Rahmen der gesetzlichen Aufbewahrungsfristen bei Apple.</li>
+  </ul>
+  <p>Eine vollständige Löschung aller lokal gespeicherten Daten erreichen Sie durch Deinstallation der App. Sofern Sie Backups Ihres Geräts angelegt haben, können die Daten dort weiterhin enthalten sein, bis das jeweilige Backup ersetzt oder gelöscht wird.</p>
+  <h3 id="ds-9">9. Empfänger der Daten</h3>
+  <p>Eine Weitergabe personenbezogener Daten an Dritte erfolgt nicht, es sei denn, dies ist zur Erbringung der oben beschriebenen Funktionen erforderlich (Apple als Betreiber der genutzten Plattformdienste) oder es besteht eine gesetzliche Verpflichtung. Wenn Sie selbst einen Ort teilen, bestimmen Sie den Empfänger (Ziffer 4.3). Auftragsverarbeiter im eigenen Auftrag des Anbieters werden nicht eingesetzt; ein eigener Server oder Hosting-Dienstleister für App-Daten besteht nicht.</p>
+  <h3 id="ds-10">10. Datensicherheit</h3>
+  <p>Die Datenübertragung zu den genutzten Apple-Diensten erfolgt ausschließlich verschlüsselt (TLS). Die lokal auf Ihrem Gerät gespeicherten Daten sind durch die Schutzmechanismen des Betriebssystems geschützt, insbesondere durch die Geräteverschlüsselung und den Code- bzw. Biometrie-Schutz Ihres Geräts. Bitte halten Sie Ihr Gerät und das Betriebssystem aktuell und sichern Sie es mit einem Gerätecode – gespeicherte Orte sind Standortangaben und damit schützenswert.</p>
+  <h3 id="ds-11">11. Rechte der betroffenen Personen</h3>
+  <p>Sie haben gegenüber dem Verantwortlichen folgende Rechte:</p>
+  <ul>
+    <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
+    <li>Recht auf Berichtigung (Art. 16 DSGVO)</li>
+    <li>Recht auf Löschung (Art. 17 DSGVO)</li>
+    <li>Recht auf Einschränkung der Verarbeitung (Art. 18 DSGVO)</li>
+    <li>Recht auf Datenübertragbarkeit (Art. 20 DSGVO)</li>
+    <li>Widerspruchsrecht (Art. 21 DSGVO)</li>
+  </ul>
+  <p>Anfragen richten Sie bitte an: <a href="mailto:privacy@rocktrackr.de">privacy@rocktrackr.de</a></p>
+  <p>Bitte beachten Sie: Da der Anbieter keine Nutzerkonten führt und keine Ihrer Inhalte erhält, liegen ihm in aller Regel keine Daten vor, die einer Auskunft, Berichtigung oder Löschung zugänglich wären. Ihre in der App gespeicherten Daten haben Sie jederzeit selbst in der Hand.</p>
+  <p><strong>Widerruf von Einwilligungen:</strong> Soweit eine Verarbeitung auf einer Einwilligung beruht (Art. 6 Abs. 1 lit. a DSGVO) – insbesondere bei Standort und Kamera –, können Sie diese jederzeit mit Wirkung für die Zukunft widerrufen, insbesondere über die Systemeinstellungen für App-Berechtigungen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt unberührt.</p>
+  <p><strong>Beschwerderecht:</strong> Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren (Art. 77 DSGVO). Zuständig ist das Unabhängige Landeszentrum für Datenschutz Schleswig-Holstein (ULD), Holstenstraße 98, 24103 Kiel, www.datenschutzzentrum.de.</p>
+  <h3 id="ds-12">12. Kinder</h3>
+  <p>Die App richtet sich nicht gezielt an Kinder und erhebt wissentlich keine personenbezogenen Daten von Kindern. Minderjährige sollten die App nur mit Zustimmung eines Erziehungsberechtigten nutzen; In-App-Käufe (Trinkgeld) bedürfen dessen ausdrücklicher Genehmigung.</p>
+  <h3 id="ds-13">13. Änderungen dieser Datenschutzerklärung</h3>
+  <p>Diese Erklärung kann angepasst werden, um Änderungen der App, der genutzten Apple-Dienste oder der Rechtslage zu berücksichtigen. Es gilt jeweils die zum Zeitpunkt Ihrer Nutzung abrufbare Fassung. Das Datum der letzten Aktualisierung ist unten angegeben.</p>
+  <hr>
+  <p style="color:var(--fg-muted)">Stand: 13.09.2026 — SpotTrackR</p>
+</section>
+
+
+<!-- ==================== IMPRESSUM ==================== -->
+<section class="doc" id="impressum" aria-labelledby="imp-titel">
+  <h2 id="imp-titel">Impressum</h2>
+  <p class="lead" style="color:var(--fg-muted)">Stand: 13.09.2026</p>
+
+  <h3 id="imp-1">Angaben gemäß § 5 DDG</h3>
+  <address>
+    Volker Herrmann<br>
+    Am Dorfteich 11<br>
+    25462 Rellingen<br>
+    Deutschland
+  </address>
+  <h3 id="imp-2">Kontakt</h3>
+  <p>Telefon: <a href="tel:+4915751598959">+49 (0) 157 515 989 59</a><br>
+     E-Mail: <a href="mailto:contact@rocktrackr.de">contact@rocktrackr.de</a></p>
+  <h3 id="imp-3">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h3>
+  <address>
+    Volker Herrmann<br>
+    Am Dorfteich 11<br>
+    25462 Rellingen<br>
+    Deutschland
+  </address>
+  <h3 id="imp-4">Umsatzsteuer</h3>
+  <p>Keine USt-IdNr. vorhanden (Privatperson, kein eingetragenes Gewerbe).</p>
+  <h3 id="imp-5">Verbraucherstreitbeilegung / Universalschlichtungsstelle</h3>
+  <p>Die Europäische Kommission stellt unter <a href="https://ec.europa.eu/consumers/odr/">https://ec.europa.eu/consumers/odr/</a> eine Plattform zur Online-Streitbeilegung bereit.</p>
+  <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+  <h3 id="imp-6">Widerspruch Werbe-Mails</h3>
+  <p>Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit widersprochen. Der Betreiber der Seiten behält sich ausdrücklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-E-Mails, vor.</p>
+  <h3 id="imp-7">Rechtliche Hinweise zu Markennamen und Abbildungen</h3>
+  <p>Apple, das Apple-Logo, iPhone, iPad, Mac, iOS, iPadOS, macOS, iCloud, App Store, Apple Karten, MapKit, Core Location und StoreKit sind Marken bzw. eingetragene Marken der Apple Inc. Weitere auf dieser Website und in den App-Screenshots verwendete Namen, Marken und Logos sind Eigentum der jeweiligen Rechteinhaber. Ihre Nennung dient ausschließlich der beschreibenden Darstellung und Veranschaulichung der Funktionen der App „SpotTrackR" (referenzielle Nutzung).</p>
+  <p>Es besteht keine geschäftliche Verbindung, Partnerschaft, Sponsoring oder offizielle Autorisierung zwischen dem Anbieter dieser App und den genannten Unternehmen oder Rechteinhabern.</p>
+  <p>In den App-Screenshots dargestellte Orte, Koordinaten, Entfernungen, Bezeichnungen und Strecken sind Beispieldaten und dienen ausschließlich der Veranschaulichung des Funktionsumfangs. Soweit auf Screenshots Kartenausschnitte zu sehen sind, stammt das Kartenmaterial von Apple; soweit Fotografien oder Kamerabilder zu sehen sind, wurden diese vom Anbieter der App persönlich erstellt.</p>
+  <h3 id="imp-8">Haftung für Inhalte</h3>
+  <p>Als Diensteanbieter bin ich gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG bin ich als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werde ich diese Inhalte umgehend entfernen.</p>
+  <h3 id="imp-9">Haftung für Links</h3>
+  <p>Mein Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Deshalb kann ich für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft; rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werde ich derartige Links umgehend entfernen.</p>
+  <h3 id="imp-10">Urheberrecht</h3>
+  <p>Die durch den Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.</p>
+</section>
+
+</main>
+
+<footer class="page" id="kontakt">
+  <p><strong>Volker Herrmann</strong></p>
+  <p>Am Dorfteich 11, 25462 Rellingen, Deutschland</p>
+  <p>Telefon: <a href="tel:+4915751598959">+49 (0) 157 515 989 59</a></p>
+  <p>Allgemein: <a href="mailto:contact@rocktrackr.de">contact@rocktrackr.de</a> · Datenschutz: <a href="mailto:privacy@rocktrackr.de">privacy@rocktrackr.de</a></p>
+  <p style="margin-top:1rem"><a href="#agb">AGB</a> · <a href="#datenschutz">Datenschutzerklärung</a> · <a href="#impressum">Impressum</a> · <a href="support.html">Support</a> · <a href="index-en.html" hreflang="en" lang="en">English</a></p>
+  <p style="margin-top:1rem">SpotTrackR – Stand dieser Fassung: 13.09.2026</p>
+</footer>
+
+</div>
+
+<script>
+/* Sprachumschalter: übernimmt den aktuellen Abschnitt in die andere Sprachfassung.
+   Ohne JavaScript verlinkt der Schalter auf den Seitenanfang der anderen Datei. */
+(function () {
+  var pairs = [
+    ['agb', 'terms'], ['datenschutz', 'privacy'], ['impressum', 'imprint'],
+    ['agb-', 'terms-'], ['ds-', 'pp-'], ['imp-', 'imp-']
+  ];
+  var link = document.getElementById('lang-switch');
+  if (!link || !link.dataset || !link.dataset.base) return;
+  var fromDe = document.documentElement.lang === 'de';
+  function convert(hash) {
+    for (var i = 0; i < pairs.length; i++) {
+      var from = pairs[i][fromDe ? 0 : 1];
+      var to = pairs[i][fromDe ? 1 : 0];
+      if (hash === from) return to;
+      if (from.charAt(from.length - 1) === '-' && hash.indexOf(from) === 0) {
+        return to + hash.slice(from.length);
+      }
+    }
+    return '';
+  }
+  function sync() {
+    var hash = (location.hash || '').replace('#', '');
+    var target = hash ? convert(hash) : '';
+    link.setAttribute('href', link.dataset.base + (target ? '#' + target : ''));
+  }
+  sync();
+  window.addEventListener('hashchange', sync);
+})();
+</script>
+
+</body>
+</html>
