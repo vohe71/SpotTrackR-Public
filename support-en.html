@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpotTrackR – Support and Help</title>
+<meta name="description" content="Support for the SpotTrackR iPhone app: contact, frequently asked questions and legal information.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="de" href="support.html">
+<link rel="alternate" hreflang="en" href="support-en.html">
+<link rel="alternate" hreflang="x-default" href="support.html">
+<style>
+  :root{
+    --bg:#ffffff;
+    --bg-soft:#f5f6f8;
+    --bg-nav:rgba(255,255,255,.88);
+    --fg:#1b1d21;
+    --fg-muted:#5a6069;
+    --rule:#e2e5ea;
+    --accent:#1f6feb;
+    --accent-soft:#eaf1fd;
+    --maxw:44rem;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#15171a;
+      --bg-soft:#1d2024;
+      --bg-nav:rgba(21,23,26,.88);
+      --fg:#e6e8ea;
+      --fg-muted:#a0a6ae;
+      --rule:#2c3037;
+      --accent:#6ea8fe;
+      --accent-soft:#1c2939;
+    }
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%; scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--fg);
+    font:400 17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 1.25rem}
+
+  /* ---------- Kopf ---------- */
+  header.page{padding:3.25rem 0 1.5rem}
+  header.page h1{font-size:1.9rem; line-height:1.2; margin:0 0 .35rem; letter-spacing:-.02em}
+  header.page p.lead{margin:0; color:var(--fg-muted)}
+  .stand{display:inline-block; margin-top:1rem; padding:.2rem .6rem; border-radius:999px;
+         background:var(--bg-soft); color:var(--fg-muted); font-size:.82rem}
+
+  /* ---------- Sprungnavigation + Sprachumschalter ---------- */
+  nav.top{
+    position:sticky; top:0; z-index:10;
+    background:var(--bg-nav);
+    -webkit-backdrop-filter:saturate(180%) blur(12px);
+    backdrop-filter:saturate(180%) blur(12px);
+    border-bottom:1px solid var(--rule);
+  }
+  nav.top .navbar{
+    display:flex; align-items:center; gap:.75rem;
+    max-width:var(--maxw); margin-inline:auto; padding:.6rem 1.25rem;
+  }
+  nav.top ul{
+    display:flex; gap:.5rem; margin:0; padding:0; list-style:none;
+    flex:1 1 auto; min-width:0; overflow-x:auto;
+    scrollbar-width:none;
+  }
+  nav.top ul::-webkit-scrollbar{display:none}
+  nav.top a{
+    display:block; white-space:nowrap; text-decoration:none; color:var(--fg-muted);
+    font-size:.9rem; font-weight:500; padding:.3rem .7rem; border-radius:999px;
+  }
+  nav.top a:hover{color:var(--fg); background:var(--bg-soft)}
+  .lang{
+    display:flex; gap:.15rem; flex:0 0 auto;
+    background:var(--bg-soft); border-radius:999px; padding:.15rem;
+  }
+  .lang a{
+    font-size:.8rem; font-weight:600; letter-spacing:.03em;
+    padding:.25rem .55rem; border-radius:999px; color:var(--fg-muted);
+  }
+  .lang a:hover{color:var(--fg); background:transparent}
+  .lang a[aria-current="page"]{background:var(--accent-soft); color:var(--accent)}
+
+  /* ---------- Inhalt ---------- */
+  main{padding-bottom:4rem}
+  section.doc{padding-top:2.5rem; border-top:1px solid var(--rule); margin-top:2.5rem}
+  section.doc:first-of-type{border-top:0; margin-top:0}
+  h2{font-size:1.5rem; line-height:1.25; margin:0 0 .25rem; letter-spacing:-.015em}
+  h3{font-size:1.08rem; margin:2.25rem 0 .5rem; line-height:1.35}
+  h4{font-size:.98rem; margin:1.6rem 0 .4rem; color:var(--fg); line-height:1.4}
+  p{margin:0 0 .9rem}
+  ul{margin:0 0 .9rem; padding-left:1.25rem}
+  li{margin-bottom:.4rem}
+  a{color:var(--accent)}
+  strong{font-weight:600}
+  address{font-style:normal; margin:0 0 .9rem; color:var(--fg)}
+  hr{border:0; border-top:1px solid var(--rule); margin:2rem 0}
+
+  /* Anker nicht unter der Sticky-Nav verstecken */
+  section.doc,h2,h3,h4{scroll-margin-top:4.25rem}
+
+  .callout{
+    background:var(--bg-soft); border-left:3px solid var(--accent);
+    padding:1rem 1.1rem; border-radius:.35rem; margin:0 0 1.4rem;
+  }
+  .callout p:last-child{margin-bottom:0}
+
+  .translation-note{
+    font-size:.9rem; color:var(--fg-muted); font-style:italic;
+    margin:0 0 1.4rem;
+  }
+
+  .meta{margin:.6rem 0 1.2rem; padding-left:.9rem; border-left:2px solid var(--rule);
+        font-size:.93rem; color:var(--fg-muted)}
+  .meta p{margin:0 0 .25rem}
+  .meta p:last-child{margin-bottom:0}
+  .meta strong{color:var(--fg)}
+
+  .toc{background:var(--bg-soft); border-radius:.5rem; padding:1rem 1.25rem; margin:1.25rem 0 2rem}
+  .toc p{font-size:.8rem; text-transform:uppercase; letter-spacing:.06em;
+         color:var(--fg-muted); margin:0 0 .5rem; font-weight:600}
+  .toc ol{margin:0; padding-left:1.35rem; font-size:.94rem}
+  .toc li{margin-bottom:.25rem}
+  .toc a{text-decoration:none}
+  .toc a:hover{text-decoration:underline}
+
+  footer.page{border-top:1px solid var(--rule); padding:1.75rem 0 3rem;
+              color:var(--fg-muted); font-size:.9rem}
+  footer.page p{margin:0 0 .4rem}
+
+  @media (max-width:520px){
+    body{font-size:16px}
+    header.page{padding-top:2.25rem}
+    header.page h1{font-size:1.55rem}
+    h2{font-size:1.3rem}
+    nav.top .navbar{gap:.5rem; padding-inline:1rem}
+  }
+</style>
+<style>
+  /* Ergänzungen der Support-Seite */
+  .cards{display:grid; gap:.9rem; grid-template-columns:repeat(auto-fit,minmax(13rem,1fr)); margin:0 0 1.6rem}
+  .card{background:var(--bg-soft); border-radius:.6rem; padding:1rem 1.1rem}
+  .card h3{margin:0 0 .3rem; font-size:1rem}
+  .card p{margin:0; font-size:.94rem; color:var(--fg-muted)}
+  .card a{font-weight:600}
+  details.faq{border-top:1px solid var(--rule); padding:.85rem 0}
+  details.faq:last-of-type{border-bottom:1px solid var(--rule)}
+  details.faq summary{cursor:pointer; font-weight:600; list-style:none; display:flex; gap:.6rem; align-items:flex-start}
+  details.faq summary::-webkit-details-marker{display:none}
+  details.faq summary::before{content:"+"; color:var(--accent); font-weight:700; line-height:1.5}
+  details.faq[open] summary::before{content:"–"}
+  details.faq > *:not(summary){margin-top:.6rem}
+  details.faq p:last-child{margin-bottom:0}
+  .checklist{list-style:none; padding-left:0}
+  .checklist li{padding-left:1.3rem; position:relative}
+  .checklist li::before{content:"→"; position:absolute; left:0; color:var(--accent)}
+</style>
+</head>
+<body>
+
+<nav class="top" aria-label="Page navigation">
+  <div class="navbar">
+    <ul>
+      <li><a href="#kontakt">Contact</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#rechtliches">Legal</a></li>
+      <li><a href="index-en.html">Terms &amp; Privacy</a></li>
+    </ul>
+    <div class="lang">
+      <a href="support.html" hreflang="de">DE</a>
+      <a href="support-en.html" hreflang="en" lang="en" aria-current="page">EN</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<header class="page">
+  <h1>SpotTrackR – Support</h1>
+  <p class="lead">Questions, bugs, wishes: one address, one person. And a few answers first that may already be enough.</p>
+  <p><span class="stand">Version: 13 September 2026</span></p>
+</header>
+
+<main>
+
+<section class="doc" id="kontakt" aria-labelledby="kontakt-titel">
+  <h2 id="kontakt-titel">Contact</h2>
+
+  <div class="callout">
+    <p>Just send me an e-mail: <strong><a href="mailto:contact@rocktrackr.de">contact@rocktrackr.de</a></strong></p>
+    <p>SpotTrackR is built in my spare time. I reply as quickly as I can — usually within a few days. There is no ticket system, no chatbot and no support form: your message reaches me directly.</p>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Report a bug</h3>
+      <p>What did you do, what happened, and what did you expect instead?</p>
+    </div>
+    <div class="card">
+      <h3>Suggest a feature</h3>
+      <p>Ideally with one sentence on the situation in which it would help you.</p>
+    </div>
+    <div class="card">
+      <h3>Privacy</h3>
+      <p>Questions about data and your rights: <a href="index-en.html#privacy">Privacy Policy</a></p>
+    </div>
+  </div>
+
+  <h3 id="angaben">What your message should include</h3>
+  <p>So that I don't have to ask back, the following helps:</p>
+  <ul class="checklist">
+    <li>Device (e.g. iPhone 15 Pro) and iOS version (Settings → General → About)</li>
+    <li>App version — shown at the bottom of the app's settings (gear icon at the top right of the grid)</li>
+    <li>Which screen: spots, compass, camera view, trail or settings</li>
+    <li>Whether the problem occurs every time or only occasionally</li>
+    <li>A screenshot or screen recording, if possible</li>
+  </ul>
+  <p>Please don't send me the coordinates of saved spots unless the question requires it — I almost never need them.</p>
+</section>
+
+<section class="doc" id="faq" aria-labelledby="faq-titel">
+  <h2 id="faq-titel">Frequently asked questions</h2>
+  <p>Most questions can be answered in a few seconds. There is more detail in the in-app help (Settings → Help).</p>
+
+  <details class="faq" id="faq-gps">
+    <summary>The bar above the grid says "Poor GPS", or no location is found</summary>
+    <p>The line above the grid shows how good the current location fix is. Under roofs, in a car, between tall buildings or in a forest, the device needs longer. Walk a few steps into the open and wait a few seconds until the accuracy improves — only then save a spot.</p>
+    <p>If nothing changes, check Settings → Privacy &amp; Security → Location Services. Location Services must be on and set to "While Using the App" for SpotTrackR. "Precise Location" should also be enabled; without it the app can only guide you back to within a few hundred metres. Low Power Mode and Airplane Mode can slow location fixes down as well.</p>
+  </details>
+
+  <details class="faq" id="faq-kompass">
+    <summary>The arrow points the wrong way or looks faded</summary>
+    <p>A faded arrow means the device compass is disturbed. This happens near metal, magnets, speakers, chargers, magnetic accessories and inside vehicles. Take the device out of its mount and move it through a figure of eight a few times — that calibrates the compass.</p>
+    <p>While you are walking, the app takes the direction from your GPS course, so a few steps in a straight line help too. Also check "Bearing" in the settings: true north matches maps, magnetic north only makes sense if you are working with an analogue compass alongside.</p>
+  </details>
+
+  <details class="faq" id="faq-karte">
+    <summary>The map stays empty or isn't offered at all</summary>
+    <p>The map is the only feature that needs an internet connection — the map material comes from Apple Maps. Without a connection it is therefore not offered in the first place. There is no offline map.</p>
+    <p>The arrow, distance, waypoints, camera view and saving spots all keep working entirely offline.</p>
+  </details>
+
+  <details class="faq" id="faq-kamera">
+    <summary>The camera view is missing or shows only a black image</summary>
+    <p>The camera button appears only on devices with a camera and motion sensors. The app asks for permission the first time you open the view; if it was declined, you can grant it later under Settings → Privacy &amp; Security → Camera → SpotTrackR.</p>
+    <p>The camera image is shown live only. It is not recorded, not stored and not transmitted.</p>
+  </details>
+
+  <details class="faq" id="faq-loeschen">
+    <summary>How do I delete one spot or all of them?</summary>
+    <p>Press and hold a tile to open its menu — from there a spot can be deleted, overwritten, renamed or shared. "Reset all spots" in the settings removes every spot at once and also restores the original names, symbols and colours.</p>
+    <p>Uninstalling the app deletes all locally stored data. Note that if you have created a device backup, the data may still be contained there.</p>
+  </details>
+
+  <details class="faq" id="faq-teilen">
+    <summary>How do I share a spot — and how do I accept one I received?</summary>
+    <p>The menu of an occupied tile contains "Share". From there the spot goes out via AirDrop, Messages or Mail. Anyone who has SpotTrackR receives it straight into their grid; everyone else gets the coordinates and a link to Apple Maps.</p>
+    <p>The other way round, tap the file or link you received and choose the slot the spot should go into. It also works from Apple Maps: share the place, choose SpotTrackR, tap a slot. If that slot is already occupied, the app asks first — an overwritten spot cannot be restored.</p>
+  </details>
+
+  <details class="faq" id="faq-sync">
+    <summary>Are my spots synchronised? What happens when I change devices?</summary>
+    <p>No. SpotTrackR has no user account, no server and no synchronisation; everything stays on the device. Spots reach a new device only through a restored device or iCloud backup. Without a backup, the app starts there with empty slots.</p>
+  </details>
+
+  <details class="faq" id="faq-trinkgeld">
+    <summary>Tips: what do they unlock, and how do I get a refund?</summary>
+    <p>Nothing — and that's deliberate. SpotTrackR is completely free and every feature is there from the start. A tip is simply a thank-you to the developer; there is no PRO version and no subscription.</p>
+    <p>Because it unlocks nothing, there is no need for "Restore Purchases" either. Refunds are handled exclusively by Apple: <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>. I have no access to payment data.</p>
+  </details>
+
+  <details class="faq" id="faq-akku">
+    <summary>The app uses a lot of battery</summary>
+    <p>The map and the camera view cost the most, followed by the "Keep screen awake" option. The classic compass view with the map collapsed is the most frugal way back. Location is only determined while the app is in the foreground anyway — it does not ask for your location in the background.</p>
+  </details>
+
+  <details class="faq" id="faq-ankunft">
+    <summary>The app says "You're there", but I can't see my target</summary>
+    <p>That message appears as soon as you are within the location accuracy. Instead of a direction, the app then shows the circle in which the spot lies — with a poor fix that can be a few dozen metres across. The last few metres are for your own eyes.</p>
+  </details>
+
+  <details class="faq" id="faq-voraussetzungen">
+    <summary>System requirements and languages</summary>
+    <p>SpotTrackR runs on iPhone with iOS 26 or later. The app is available in German and English and follows your device language. The camera view requires a camera and motion sensors; the map requires an internet connection.</p>
+  </details>
+</section>
+
+<section class="doc" id="sicherheit" aria-labelledby="sicherheit-titel">
+  <h2 id="sicherheit-titel">Please keep in mind</h2>
+  <p>SpotTrackR is an orientation aid for recreational use — not a navigation system, not a rescue tool and no substitute for a map and compass. Satellite reception and the magnetic compass can be off by metres or by hundreds of metres, and a device can run flat or get wet.</p>
+  <p>On routes where getting lost could become dangerous, do not rely on the app alone, and keep an eye on your surroundings while walking — especially in the camera view. The details are set out in <a href="index-en.html#terms-6">§ 6 of the Terms</a>.</p>
+</section>
+
+<section class="doc" id="rechtliches" aria-labelledby="rechtliches-titel">
+  <h2 id="rechtliches-titel">Legal and privacy</h2>
+  <ul>
+    <li><a href="index-en.html#terms">Terms and Conditions</a></li>
+    <li><a href="index-en.html#privacy">Privacy Policy</a></li>
+    <li><a href="index-en.html#imprint">Legal Notice (Imprint)</a></li>
+  </ul>
+  <p>In short: no account, no server, no synchronisation, no analytics or tracking services. Saved spots stay on your device; I have no access to them.</p>
+</section>
+
+</main>
+
+<footer class="page" id="foot">
+  <p><strong>Volker Herrmann</strong></p>
+  <p>Am Dorfteich 11, 25462 Rellingen, Germany</p>
+  <p>Phone: <a href="tel:+4915751598959">+49 (0) 157 515 989 59</a></p>
+  <p>Support: <a href="mailto:contact@rocktrackr.de">contact@rocktrackr.de</a> · Privacy: <a href="mailto:privacy@rocktrackr.de">privacy@rocktrackr.de</a></p>
+  <p style="margin-top:1rem"><a href="#kontakt">Contact</a> · <a href="#faq">FAQ</a> · <a href="index-en.html#terms">Terms</a> · <a href="index-en.html#privacy">Privacy Policy</a> · <a href="index-en.html#imprint">Legal Notice</a> · <a href="support.html" hreflang="de" lang="de">Deutsch</a></p>
+  <p style="margin-top:1rem">SpotTrackR – support page, version: 13 September 2026</p>
+</footer>
+
+</div>
+
+</body>
+</html>
