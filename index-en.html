@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpotTrackR – Terms, Privacy Policy and Legal Notice</title>
+<meta name="description" content="Terms and Conditions, Privacy Policy and Legal Notice for the SpotTrackR app.">
+<meta name="robots" content="index, follow">
+<link rel="alternate" hreflang="de" href="index.html">
+<link rel="alternate" hreflang="en" href="index-en.html">
+<link rel="alternate" hreflang="x-default" href="index.html">
+<style>
+  :root{
+    --bg:#ffffff;
+    --bg-soft:#f5f6f8;
+    --bg-nav:rgba(255,255,255,.88);
+    --fg:#1b1d21;
+    --fg-muted:#5a6069;
+    --rule:#e2e5ea;
+    --accent:#1f6feb;
+    --accent-soft:#eaf1fd;
+    --maxw:44rem;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#15171a;
+      --bg-soft:#1d2024;
+      --bg-nav:rgba(21,23,26,.88);
+      --fg:#e6e8ea;
+      --fg-muted:#a0a6ae;
+      --rule:#2c3037;
+      --accent:#6ea8fe;
+      --accent-soft:#1c2939;
+    }
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%; scroll-behavior:smooth}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--fg);
+    font:400 17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 1.25rem}
+
+  /* ---------- Kopf ---------- */
+  header.page{padding:3.25rem 0 1.5rem}
+  header.page h1{font-size:1.9rem; line-height:1.2; margin:0 0 .35rem; letter-spacing:-.02em}
+  header.page p.lead{margin:0; color:var(--fg-muted)}
+  .stand{display:inline-block; margin-top:1rem; padding:.2rem .6rem; border-radius:999px;
+         background:var(--bg-soft); color:var(--fg-muted); font-size:.82rem}
+
+  /* ---------- Sprungnavigation + Sprachumschalter ---------- */
+  nav.top{
+    position:sticky; top:0; z-index:10;
+    background:var(--bg-nav);
+    -webkit-backdrop-filter:saturate(180%) blur(12px);
+    backdrop-filter:saturate(180%) blur(12px);
+    border-bottom:1px solid var(--rule);
+  }
+  nav.top .navbar{
+    display:flex; align-items:center; gap:.75rem;
+    max-width:var(--maxw); margin-inline:auto; padding:.6rem 1.25rem;
+  }
+  nav.top ul{
+    display:flex; gap:.5rem; margin:0; padding:0; list-style:none;
+    flex:1 1 auto; min-width:0; overflow-x:auto;
+    scrollbar-width:none;
+  }
+  nav.top ul::-webkit-scrollbar{display:none}
+  nav.top a{
+    display:block; white-space:nowrap; text-decoration:none; color:var(--fg-muted);
+    font-size:.9rem; font-weight:500; padding:.3rem .7rem; border-radius:999px;
+  }
+  nav.top a:hover{color:var(--fg); background:var(--bg-soft)}
+  .lang{
+    display:flex; gap:.15rem; flex:0 0 auto;
+    background:var(--bg-soft); border-radius:999px; padding:.15rem;
+  }
+  .lang a{
+    font-size:.8rem; font-weight:600; letter-spacing:.03em;
+    padding:.25rem .55rem; border-radius:999px; color:var(--fg-muted);
+  }
+  .lang a:hover{color:var(--fg); background:transparent}
+  .lang a[aria-current="page"]{background:var(--accent-soft); color:var(--accent)}
+
+  /* ---------- Inhalt ---------- */
+  main{padding-bottom:4rem}
+  section.doc{padding-top:2.5rem; border-top:1px solid var(--rule); margin-top:2.5rem}
+  section.doc:first-of-type{border-top:0; margin-top:0}
+  h2{font-size:1.5rem; line-height:1.25; margin:0 0 .25rem; letter-spacing:-.015em}
+  h3{font-size:1.08rem; margin:2.25rem 0 .5rem; line-height:1.35}
+  h4{font-size:.98rem; margin:1.6rem 0 .4rem; color:var(--fg); line-height:1.4}
+  p{margin:0 0 .9rem}
+  ul{margin:0 0 .9rem; padding-left:1.25rem}
+  li{margin-bottom:.4rem}
+  a{color:var(--accent)}
+  strong{font-weight:600}
+  address{font-style:normal; margin:0 0 .9rem; color:var(--fg)}
+  hr{border:0; border-top:1px solid var(--rule); margin:2rem 0}
+
+  /* Anker nicht unter der Sticky-Nav verstecken */
+  section.doc,h2,h3,h4{scroll-margin-top:4.25rem}
+
+  .callout{
+    background:var(--bg-soft); border-left:3px solid var(--accent);
+    padding:1rem 1.1rem; border-radius:.35rem; margin:0 0 1.4rem;
+  }
+  .callout p:last-child{margin-bottom:0}
+
+  .translation-note{
+    font-size:.9rem; color:var(--fg-muted); font-style:italic;
+    margin:0 0 1.4rem;
+  }
+
+  .meta{margin:.6rem 0 1.2rem; padding-left:.9rem; border-left:2px solid var(--rule);
+        font-size:.93rem; color:var(--fg-muted)}
+  .meta p{margin:0 0 .25rem}
+  .meta p:last-child{margin-bottom:0}
+  .meta strong{color:var(--fg)}
+
+  .toc{background:var(--bg-soft); border-radius:.5rem; padding:1rem 1.25rem; margin:1.25rem 0 2rem}
+  .toc p{font-size:.8rem; text-transform:uppercase; letter-spacing:.06em;
+         color:var(--fg-muted); margin:0 0 .5rem; font-weight:600}
+  .toc ol{margin:0; padding-left:1.35rem; font-size:.94rem}
+  .toc li{margin-bottom:.25rem}
+  .toc a{text-decoration:none}
+  .toc a:hover{text-decoration:underline}
+
+  footer.page{border-top:1px solid var(--rule); padding:1.75rem 0 3rem;
+              color:var(--fg-muted); font-size:.9rem}
+  footer.page p{margin:0 0 .4rem}
+
+  @media (max-width:520px){
+    body{font-size:16px}
+    header.page{padding-top:2.25rem}
+    header.page h1{font-size:1.55rem}
+    h2{font-size:1.3rem}
+    nav.top .navbar{gap:.5rem; padding-inline:1rem}
+  }
+</style>
+</head>
+<body>
+
+<nav class="top" aria-label="Document navigation">
+  <div class="navbar">
+    <ul>
+      <li><a href="#terms">Terms</a></li>
+      <li><a href="#privacy">Privacy Policy</a></li>
+      <li><a href="#imprint">Legal Notice</a></li>
+      <li><a href="support-en.html">Support</a></li>
+    </ul>
+    <div class="lang">
+      <a id="lang-switch" data-base="index.html" href="index.html" hreflang="de" lang="de">DE</a>
+      <a href="index-en.html" hreflang="en" aria-current="page">EN</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<header class="page">
+  <h1>SpotTrackR – Legal Information</h1>
+  <p class="lead">Terms and Conditions, Privacy Policy and Legal Notice for the SpotTrackR app.</p>
+  <p><span class="stand">Version: 13 September 2026</span></p>
+</header>
+
+<main>
+
+
+
+<!-- ==================== AGB ==================== -->
+<section class="doc" id="terms" aria-labelledby="terms-titel">
+  <h2 id="terms-titel">Terms and Conditions for SpotTrackR</h2>
+  <p class="lead" style="color:var(--fg-muted)">Version: 13 September 2026</p>
+  <p class="translation-note">This is a translation of the German original. In the event of discrepancies, the German version prevails.</p>
+
+  <div class="toc">
+    <p>Contents</p>
+    <ol>
+      <li><a href="#terms-1">Scope and Provider</a></li>
+      <li><a href="#terms-2">Conclusion of Contract and System Requirements</a></li>
+      <li><a href="#terms-3">Description of Services</a></li>
+      <li><a href="#terms-4">Free of Charge and Voluntary Tips</a></li>
+      <li><a href="#terms-5">Right of Withdrawal</a></li>
+      <li><a href="#terms-6">Not a Navigation, Rescue or Safety Function</a></li>
+      <li><a href="#terms-7">Rights of Use</a></li>
+      <li><a href="#terms-8">Apple Services and Device Functions; No Third-Party Services</a></li>
+      <li><a href="#terms-9">Map Display</a></li>
+      <li><a href="#terms-10">Sharing and Receiving Spots</a></li>
+      <li><a href="#terms-11">User Data and Backup</a></li>
+      <li><a href="#terms-12">Availability and Changes to the App</a></li>
+      <li><a href="#terms-13">Limitation of Liability</a></li>
+      <li><a href="#terms-14">Data Protection</a></li>
+      <li><a href="#terms-15">Term and Termination</a></li>
+      <li><a href="#terms-16">Additional Terms for Use on Apple Devices</a></li>
+      <li><a href="#terms-17">Changes to These Terms</a></li>
+      <li><a href="#terms-18">Final Provisions</a></li>
+    </ol>
+  </div>
+
+  <h3 id="terms-1">§ 1 Scope and Provider</h3>
+  <p>(1) These Terms and Conditions (hereinafter "Terms") govern the use of the application SpotTrackR (hereinafter "App"), which is made available for download on the Apple App Store. The provider of the App is:</p>
+  <address>
+    Volker Herrmann<br>
+    Am Dorfteich 11, 25462 Rellingen, Germany<br>
+    E-mail: <a href="mailto:contact@rocktrackr.de">contact@rocktrackr.de</a>
+  </address>
+  <p>(hereinafter "Provider")</p>
+  <p>(2) The App may be used by users of any age. Minors may use the App only with the consent of a legal guardian and may make in-app purchases (tips, § 4) only with that guardian's express permission. The App's age rating in the Apple App Store remains authoritative.</p>
+  <p>(3) Conflicting or deviating terms of the user are not recognised unless the Provider expressly agrees to their validity in writing.</p>
+  <h3 id="terms-2">§ 2 Conclusion of Contract and System Requirements</h3>
+  <p>(1) By downloading, installing or using the App, the user agrees to these Terms. The contract for use of the App is concluded when the App is first launched.</p>
+  <p>(2) The App is entirely free of charge. There is no paid full version, no subscription and no feature that is unlocked in return for payment. Voluntary support payments ("tips") are governed by § 4.</p>
+  <p>(3) Use of the App requires a compatible iPhone running a currently supported version of iOS. The current minimum requirements are stated in the App Store description. The Provider gives no guarantee of compatibility with all devices or operating system versions.</p>
+  <p>(4) Individual features require additional conditions, in particular:</p>
+  <ul>
+    <li>the system permission for location access, including access to the precise location (saving spots, direction and distance, waypoints);</li>
+    <li>a device with a camera and motion sensors, plus the camera permission (overlaying the direction on the camera image);</li>
+    <li>an active internet connection (displaying the map).</li>
+  </ul>
+  <p>If these conditions are not met, the features concerned are unavailable in whole or in part; the remaining features of the App continue to work. Without location permission, the App cannot be used meaningfully.</p>
+  <h3 id="terms-3">§ 3 Description of Services</h3>
+  <p>(1) The App helps the user find their way back to a place they saved themselves. It comprises in particular:</p>
+  <ul>
+    <li>six storage slots in which the user can save their current location and which can be renamed and given a symbol and colour;</li>
+    <li>guidance back to a saved spot by means of a direction indicator (arrow or compass) and a distance reading, optionally displayed over a map;</li>
+    <li>an overlay of the direction and the target on the live camera image;</li>
+    <li>setting waypoints along a route as well as saving and reloading named routes;</li>
+    <li>sharing a saved spot via the system share function and accepting spots received from elsewhere (the App's own files, map links, coordinates in text, places from Apple Maps);</li>
+    <li>settings for units, north reference, presentation, haptics and screen behaviour.</li>
+  </ul>
+  <p>(2) The presentation within the App and the App Store description are authoritative for the current scope of functions.</p>
+  <p>(3) Direction and distance are calculated on the device. The App does not calculate routes, paths or obstacles: what is shown is always the straight-line distance to the saved point and the corresponding direction. The App does not check whether a path exists, or whether it is passable, permitted or safe.</p>
+  <h3 id="terms-4">§ 4 Free of Charge and Voluntary Tips</h3>
+  <p>(1) The App can be used free of charge with its full range of functions.</p>
+  <p>(2) The user may give the Provider a voluntary tip at several levels by way of in-app purchases. A tip is purely a support payment: it unlocks no features, removes no restrictions and creates no claim to any service in return, to support in any particular form, or to any particular further development of the App.</p>
+  <p>(3) The tip products are technically "consumable" products. They leave no entitlement on the device or in the Apple ID; a "Restore Purchases" function therefore does not exist and is not required. A tip may be given more than once.</p>
+  <p>(4) All payments are processed exclusively by Apple (App Store). Apple's payment terms apply. Prices are shown in the App and in the App Store before purchase. The Provider has no access to the user's payment data.</p>
+  <p>(5) Refunds of amounts already paid are governed by Apple's refund policies and must be requested through Apple Support.</p>
+  <p>(6) The Provider reserves the right to change the levels and prices of tips or to discontinue the tip function. This has no effect on the App's range of functions.</p>
+  <h3 id="terms-5">§ 5 Right of Withdrawal</h3>
+  <p>(1) Downloading and using the App does not give rise to a right of withdrawal, as no payment is involved.</p>
+  <p>(2) Insofar as a tip under § 4 qualifies as a contract for the supply of digital content, the following applies: consumers are in principle entitled to a statutory right of withdrawal. Pursuant to § 356 (5) of the German Civil Code (BGB), the right of withdrawal lapses once performance of the contract has begun, the consumer has expressly consented to performance beginning before the withdrawal period expires, and has confirmed their awareness that the right of withdrawal is thereby lost. Independently of this, the user may pursue Apple's refund policies (§ 4 (5)).</p>
+  <h3 id="terms-6">§ 6 Not a Navigation, Rescue or Safety Function</h3>
+  <p>(1) The App is an orientation aid for private recreational use. It is <strong>not</strong> a navigation system, <strong>not</strong> an emergency or rescue tool and <strong>not</strong> a substitute for a map, a compass, a GPS navigation device or knowledgeable company. It must not be used as the sole basis for safety-relevant decisions, in particular not in the mountains, on water, in off-path terrain, in poor visibility, in darkness, in aviation, during rescue or search operations, or in emergencies.</p>
+  <p>(2) The accuracy of the displayed position, direction and distance depends on circumstances beyond the Provider's control, in particular the quality of satellite reception (buildings, vehicles, valleys, vegetation, weather), the calibration and interference of the magnetic compass (metal, magnets, electronics, vehicles), the location accuracy granted by the user ("Approximate Location"), and the condition and capability of the device. Deviations of several metres up to several hundred metres are possible. The App displays the location accuracy known to it; that figure is itself an estimate produced by the operating system.</p>
+  <p>(3) Using the App requires attention to one's surroundings. The user is obliged to look at their device only when the situation permits. This applies in particular to the camera overlay: it shows only a section of the surroundings and does not replace looking around. Using the App while driving a vehicle is prohibited.</p>
+  <p>(4) Location services, map display, sensors and the camera consume energy. The user is responsible for keeping an eye on their device's battery level and for not placing themselves in a situation in which they depend on a working device. The Provider recommends that, on routes where getting lost could become dangerous, users also orient themselves independently of the App.</p>
+  <p>(5) The user is obliged to observe applicable law and the rights of third parties, in particular rules on access to land, nature conservation and property rights, as well as the provisions on image and sound recording when using the camera view.</p>
+  <h3 id="terms-7">§ 7 Rights of Use</h3>
+  <p>(1) For the duration of use, the Provider grants the user a simple, non-transferable, non-sublicensable right to use the App for private, non-commercial purposes on their own Apple devices, as permitted by the Usage Rules set out in the App Store Terms of Service, whereby access is also possible by other accounts connected to the purchaser via Family Sharing.</p>
+  <p>(2) The user is prohibited from:</p>
+  <ul>
+    <li>copying, modifying, decompiling, disassembling or reverse engineering the App or parts thereof;</li>
+    <li>renting, leasing, selling, sublicensing or otherwise commercially exploiting the App in whole or in part;</li>
+    <li>circumventing protective mechanisms or technical restrictions of the App;</li>
+    <li>using the App for unlawful purposes, in particular to observe, follow or monitor other people.</li>
+  </ul>
+  <p>(3) All rights in the App, in particular copyrights, trademark rights and other industrial property rights, remain with the Provider or the respective rights holders.</p>
+  <h3 id="terms-8">§ 8 Apple Services and Device Functions; No Third-Party Services</h3>
+  <p>(1) The App uses no third-party APIs or SDKs. It relies exclusively on services and functions of the Apple platform, in particular:</p>
+  <ul>
+    <li><strong>Apple Core Location</strong> – determining the location and course of travel on the device;</li>
+    <li><strong>Apple Core Motion</strong> – device attitude and motion data for the direction indicator;</li>
+    <li><strong>the device camera (AVFoundation)</strong> – live image for the direction overlay;</li>
+    <li><strong>Apple MapKit / Apple Maps</strong> – displaying the map and generating a map link when sharing a spot;</li>
+    <li><strong>Apple StoreKit / App Store</strong> – processing voluntary tips;</li>
+    <li><strong>the system share function and share extension</strong> – sending out and accepting spots.</li>
+  </ul>
+  <p>(2) The Provider operates no server and no proxy service of its own. The App has no user account, no sign-in and no synchronisation. Saved spots, waypoints, routes and usage data are not transmitted to the Provider. No analytics, tracking or advertising services are used.</p>
+  <p>(3) Apple is responsible for the availability, functionality and content of the Apple services named. Their use may be subject to Apple's separate terms and privacy policy; users are asked to take note of these. The Provider has no influence over these services.</p>
+  <p>(4) Should an Apple service used by the App be discontinued, changed or permanently unavailable, the Provider is entitled to replace it or to adapt or remove the corresponding App features, without any claims arising for the user.</p>
+  <h3 id="terms-9">§ 9 Map Display</h3>
+  <p>(1) The map material is provided by Apple (Apple Maps / MapKit). The Provider merely reproduces it and does not adopt it as its own. No guarantee is given as to the accuracy, completeness, timeliness or availability of the map material.</p>
+  <p>(2) The map display requires an internet connection. If no connection is available, the map is not offered; the App contains no offline map. The direction indicator, distance and waypoints continue to work without a connection.</p>
+  <p>(3) Paths, trails and terrain features shown on the map are no assurance that a route exists, or that it is passable, publicly accessible or safe.</p>
+  <h3 id="terms-10">§ 10 Sharing and Receiving Spots</h3>
+  <p>(1) Whether, when and with whom the user shares a saved spot is decided solely by the user via the share function of their device. By sharing, the user discloses a position — depending on the channel, also the name they gave the slot — to the recipient. The Provider is not responsible for the recipient's further use of it, nor for processing by the target app or service chosen.</p>
+  <p>(2) The user is obliged not to share spots whose disclosure would infringe the rights of third parties, and not to pass on other people's locations without their consent.</p>
+  <p>(3) The Provider accepts no responsibility for the content and accuracy of spots that the user accepts from external sources (files, links, text messages). Accepting a received spot into an occupied slot overwrites its content; the overwritten spot cannot be restored.</p>
+  <h3 id="terms-11">§ 11 User Data and Backup</h3>
+  <p>(1) The spots, waypoints, routes and settings saved by the user are stored exclusively locally on the device — including in a shared storage area used by the App and its share extension (app group). No synchronisation between multiple devices takes place. The Provider has no access to this data.</p>
+  <p>(2) The user is responsible for backing up their own data, in particular by means of a device or iCloud backup. The Provider owes neither a backup nor the restoration of lost data.</p>
+  <p>(3) Uninstalling the App, resetting all slots, overwriting a slot, deleting a waypoint or loading a saved route may result in the irretrievable loss of the previous data. The Provider cannot reverse such a loss.</p>
+  <p>(4) Changing devices transfers the App's data only insofar as it is contained in a restored backup. Without a backup, the App starts on the new device with empty slots.</p>
+  <h3 id="terms-12">§ 12 Availability and Changes to the App</h3>
+  <p>(1) The Provider endeavours to keep the App usable with as few interruptions as possible but gives no guarantee of any particular availability or of freedom from errors. Restrictions may arise in particular in the event of technical faults or circumstances beyond the Provider's control (e.g. failure or modification of Apple services such as MapKit, restrictions imposed by Apple, changes to the location or sensor interfaces).</p>
+  <p>(2) The Provider reserves the right to develop the App further at any time, to add, change or remove features, and to discontinue the App altogether. In particular, the Provider is not obliged to ensure compatibility of the App with future versions of iOS or with future devices.</p>
+  <p>(3) If the App is discontinued, the Provider will, as far as possible, inform users with reasonable notice via the App Store description.</p>
+  <h3 id="terms-13">§ 13 Limitation of Liability</h3>
+  <p>(1) The Provider is liable without limitation for damage arising from injury to life, body or health, as well as for damage caused intentionally or through gross negligence, and for damage based on the assumption of a guarantee or fraudulent misrepresentation.</p>
+  <p>(2) Otherwise — in particular in cases of slight negligence — the Provider's liability is limited to compensation for foreseeable damage typical of the contract, insofar as a material contractual obligation (cardinal obligation) has been breached. A material contractual obligation is one whose fulfilment makes the proper performance of the contract possible in the first place and on whose observance the user may regularly rely.</p>
+  <p>(3) The Provider is not liable for slightly negligent breaches of non-material contractual obligations.</p>
+  <p>(4) In particular, the Provider is not liable for:</p>
+  <ul>
+    <li>damage arising from decisions the user makes on the basis of the App or its displays, in particular the choice of a route, getting lost, spots or objects not found again, missed appointments, meetings, departure or flight times, as well as detours and their consequences;</li>
+    <li>deviations of the displayed position, direction, altitude or distance from reality, in particular as a result of poor satellite reception, disturbed or uncalibrated compass sensors, restricted location accuracy or device-specific characteristics;</li>
+    <li>the accuracy, completeness, timeliness or availability of the map material (Apple MapKit / Apple Maps); the Provider merely reproduces this content and does not adopt it as its own;</li>
+    <li>the content and accuracy of spots the user accepts from external sources, as well as the consequences of sharing their own spots;</li>
+    <li>loss of data, insofar as this is not attributable to a grossly negligent or intentional breach of duty by the Provider; this applies in particular to losses in connection with uninstallation, resetting, overwriting, a change of device or a failure to make backups;</li>
+    <li>damage resulting from the user employing the App as a navigation, rescue or safety tool contrary to § 6, or neglecting attention to their surroundings;</li>
+    <li>damage resulting from a discharged, overheated, damaged or unavailable device;</li>
+    <li>disruptions or failures of the App or individual features that are due to force majeure, measures taken by Apple (e.g. App Store restrictions, iOS updates), disruptions of Apple services or other circumstances beyond the Provider's control;</li>
+    <li>economic decisions, financial loss or other indirect damage suffered by the user, taken or caused on the basis of the App or its content.</li>
+  </ul>
+  <p>(5) The App is provided free of charge and without any warranty, to the extent permitted by law. In particular, the Provider gives no guarantee that the App will work without errors, that it is fit for a particular purpose, or that it will permanently contain any particular range of functions.</p>
+  <p>(6) Insofar as the Provider's liability is not entirely excluded under the above provisions, it is limited in amount to the sum the user paid to the Provider in the twelve (12) months preceding the event giving rise to the damage; as the App is free of charge, this is at most the total of any voluntary tips given. This limitation does not apply to the cases of unlimited liability set out in § 13 (1).</p>
+  <p>(7) Claims for damages by the user against the Provider that are not based on an intentional or grossly negligent breach of duty or on injury to life, body or health become time-barred, by way of derogation from the statutory provisions, within one (1) year of the user becoming aware of the damage and of the Provider as the debtor, but no later than three (3) years after the event giving rise to the damage.</p>
+  <p>(8) The above limitations of liability also apply to the personal liability of the Provider's employees, representatives and agents.</p>
+  <p>(9) Liability under the German Product Liability Act remains unaffected.</p>
+  <h3 id="terms-14">§ 14 Data Protection</h3>
+  <p>(1) The Provider processes the user's personal data exclusively in accordance with the applicable General Data Protection Regulation (GDPR), the German Federal Data Protection Act (BDSG) and other applicable data protection provisions.</p>
+  <p>(2) The spots, waypoints, routes and settings saved by the user remain on the user's device; the Provider neither collects nor stores them. Location data is processed only while the App is running in the foreground; no location tracking takes place in the background. The camera image is displayed live only and is neither stored nor transmitted.</p>
+  <p>(3) Details of the data processing, the user's rights and the Apple services used are set out in the separate privacy policy, which is available in the App and in the App Store. The privacy policy forms part of these Terms.</p>
+  <h3 id="terms-15">§ 15 Term and Termination</h3>
+  <p>(1) The usage relationship is concluded for an indefinite period and may be terminated by the user at any time by uninstalling the App. No ongoing costs arise and there are no notice periods; there are no subscriptions.</p>
+  <p>(2) The Provider is entitled to block access to the App without notice for good cause, or to terminate the usage relationship extraordinarily, in particular if the user breaches these Terms or applicable law.</p>
+  <h3 id="terms-16">§ 16 Additional Terms for Use on Apple Devices</h3>
+  <p>(1) <strong>Contracting party:</strong> The user acknowledges that this contract is concluded exclusively between the Provider and the user, and not with Apple Inc. (hereinafter "Apple"). The Provider alone is responsible for the App and its content.</p>
+  <p>(2) <strong>Maintenance and support:</strong> The Provider is solely responsible for all maintenance and support services relating to the App, as specified in these Terms or as required by applicable law. The user acknowledges that Apple has no obligation whatsoever to provide maintenance or support services relating to the App.</p>
+  <p>(3) <strong>Warranty:</strong> In the event of a failure of the App to conform to any applicable warranty, the user may notify Apple, and Apple will refund the purchase price for the App to the user, if applicable. To the maximum extent permitted by law, Apple has no other warranty obligation whatsoever with respect to the App. Any other claims, losses, liabilities, damages, costs or expenses attributable to a failure to conform to any warranty are the sole responsibility of the Provider.</p>
+  <p>(4) <strong>Product liability and legal claims:</strong> The Provider and the user acknowledge that the Provider, and not Apple, is responsible for addressing claims of the user or any third party relating to the App (including product liability claims, claims of non-compliance with legal requirements, and claims under consumer protection law).</p>
+  <p>(5) <strong>Third-party intellectual property:</strong> In the event that a third party claims that the App or the user's possession and use of the App infringes that third party's intellectual property rights, the Provider, and not Apple, is solely responsible for the investigation, defence, settlement and discharge of any such intellectual property infringement claim.</p>
+  <p>(6) <strong>Legal compliance:</strong> The user represents and warrants that (i) they are not located in a country that is subject to a US Government embargo or that has been designated by the US Government as a "terrorist supporting" country, and (ii) they are not listed on any US Government list of prohibited or restricted parties.</p>
+  <p>(7) <strong>Third-party beneficiary:</strong> The user acknowledges and agrees that Apple and its subsidiaries are third-party beneficiaries of these Terms, and that, upon the user's acceptance of these Terms, Apple has the right (and is deemed to have accepted that right) to enforce these Terms against the user as a third-party beneficiary.</p>
+  <h3 id="terms-17">§ 17 Changes to These Terms</h3>
+  <p>(1) The Provider reserves the right to amend these Terms for objectively justified reasons (e.g. changes in the legal situation, new features of the App, changed technical requirements).</p>
+  <p>(2) Amendments to the Terms will be communicated to the user via an in-app notice no later than four (4) weeks before their intended entry into force. The amended Terms will be made available to the user in full text.</p>
+  <p>(3) The amended Terms are deemed accepted if the user expressly agrees to them within the App. Acceptance does not occur through silence or through mere continued use of the App.</p>
+  <p>(4) If the user does not agree to the amended Terms, the Provider is entitled to terminate the usage relationship as of the intended date of entry into force of the amended Terms.</p>
+  <p>(5) Clarifying or editorial changes that do not affect any material rights or obligations of the user may be made without the above procedure.</p>
+  <h3 id="terms-18">§ 18 Final Provisions</h3>
+  <p>(1) The law of the Federal Republic of Germany applies, excluding the UN Convention on Contracts for the International Sale of Goods (CISG). For consumers, this choice of law applies only insofar as it does not deprive them of the protection afforded by mandatory provisions of the law of the state in which the consumer has their habitual residence.</p>
+  <p>(2) The place of jurisdiction for all disputes arising from or in connection with these Terms is, to the extent legally permissible, the Provider's place of business. For consumers, the statutory place of jurisdiction applies.</p>
+  <p>(3) The European Commission provides a platform for online dispute resolution at <a href="https://ec.europa.eu/consumers/odr/">https://ec.europa.eu/consumers/odr/</a>. The Provider is neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board.</p>
+  <p>(4) Should any provision of these Terms be or become invalid or unenforceable in whole or in part, this does not affect the validity of the remaining provisions. The statutory provision takes the place of the invalid provision.</p>
+  <hr>
+  <p style="color:var(--fg-muted)">Version: 13 September 2026 — SpotTrackR</p>
+</section>
+
+
+<!-- ==================== DATENSCHUTZ ==================== -->
+<section class="doc" id="privacy" aria-labelledby="pp-titel">
+  <h2 id="pp-titel">Privacy Policy for SpotTrackR</h2>
+  <p class="lead" style="color:var(--fg-muted)">Version: 13 September 2026</p>
+  <p class="translation-note">This is a translation of the German original. In the event of discrepancies, the German version prevails.</p>
+  <p>Protecting your personal data matters to me. This privacy policy explains which data is processed when you use the SpotTrackR app.</p>
+  <div class="callout">
+    <p>The essentials first: <strong>SpotTrackR works without a user account, the Provider operates no server of its own, there is no synchronisation, and no third-party APIs or SDKs are used.</strong> The spots, waypoints, routes and settings you save stay on your device. The Provider has no access to them. Your location is processed only while the App is running in the foreground; no location tracking takes place in the background. The camera image is displayed live only and is neither stored nor transmitted. No analytics, tracking or advertising services are used.</p>
+  </div>
+
+  <div class="toc">
+    <p>Contents</p>
+    <ol>
+      <li><a href="#pp-1">Controller</a></li>
+      <li><a href="#pp-2">General information on data processing</a></li>
+      <li><a href="#pp-3">No registration, no user account</a></li>
+      <li><a href="#pp-4">Data created in the app</a></li>
+      <li><a href="#pp-5">Device functions and system permissions</a></li>
+      <li><a href="#pp-6">Apple services used</a></li>
+      <li><a href="#pp-7">No analytics, no tracking, no advertising</a></li>
+      <li><a href="#pp-8">Storage periods and deletion</a></li>
+      <li><a href="#pp-9">Recipients of the data</a></li>
+      <li><a href="#pp-10">Data security</a></li>
+      <li><a href="#pp-11">Rights of data subjects</a></li>
+      <li><a href="#pp-12">Children</a></li>
+      <li><a href="#pp-13">Changes to this privacy policy</a></li>
+    </ol>
+  </div>
+
+  <h3 id="pp-1">1. Controller</h3>
+  <p>The controller for data processing within the meaning of the General Data Protection Regulation (GDPR) is:</p>
+  <address>
+    Volker Herrmann<br>
+    Am Dorfteich 11, 25462 Rellingen, Germany<br>
+    E-mail: <a href="mailto:privacy@rocktrackr.de">privacy@rocktrackr.de</a>
+  </address>
+  <p>The controller is an individual. No data protection officer has been appointed, as there is no legal obligation to do so.</p>
+  <h3 id="pp-2">2. General information on data processing</h3>
+  <p>Personal data is processed only to the extent necessary to provide a functioning app together with its content and services. Processing takes place exclusively within the framework of the applicable legal provisions (GDPR, BDSG, TDDDG).</p>
+  <p>Almost all of the processing described in this policy takes place exclusively locally on your device. Data that does not leave your device is neither collected nor stored nor evaluated by the Provider.</p>
+  <h3 id="pp-3">3. No registration, no user account</h3>
+  <p>The App requires no registration and no login. No names, e-mail addresses, telephone numbers or other account data are collected or stored by the controller. No profiling and no automated decision-making within the meaning of Art. 22 GDPR takes place.</p>
+  <h3 id="pp-4">4. Data created in the app</h3>
+  <h4 id="pp-4-1">4.1 Saved spots, waypoints, routes and settings</h4>
+  <p>When you occupy a slot or set a waypoint, the App stores the position determined at that moment — latitude and longitude, altitude where available, the location accuracy reported by the operating system, and the time of the measurement. In addition, it stores the names, symbols and colours you choose for the slots, any named saved routes, your settings (units, north reference, presentation, haptics, screen behaviour) and a note as to whether the introduction has already been shown.</p>
+  <p>This data is held in the App's local store (the App's system preferences store) and in a storage area shared by the App and its share extension (app group). Both areas reside exclusively on your device. The shared area is required so that a spot accepted via the share function arrives in your grid.</p>
+  <p>Saved positions are location data and may therefore constitute personal data. This data is not transmitted to the Provider. The Provider has no access to this content.</p>
+  <div class="meta">
+    <p><strong>Legal basis:</strong> Insofar as this involves any processing by the controller at all, it takes place in order to perform the usage contract pursuant to Art. 6 (1) (b) GDPR.</p>
+  </div>
+  <h4 id="pp-4-2">4.2 No synchronisation; inclusion in device backups</h4>
+  <p>The App synchronises nothing. There is no iCloud synchronisation, no transfer between multiple devices, and no storage in a cloud database of the Provider or of a third party.</p>
+  <p>If you have set up a backup on your device (iCloud backup or a backup on your computer), the App's locally stored data may — like the data of other apps — become part of that backup. The backup is a function of your device; Apple and you yourself are responsible for it. The Provider has no access to backups. You control this in the system settings (Settings → Apple Account → iCloud → iCloud Backup).</p>
+  <h4 id="pp-4-3">4.3 Sharing and receiving spots</h4>
+  <p>Using your device's share function, you can pass on a saved spot. In doing so, the coordinates, and where available the altitude, accuracy and time of measurement, as well as the name you gave the slot, leave your device — depending on the channel chosen, as one of the App's own files, as text containing the coordinates, or as a link to Apple Maps. Where this information ends up is determined solely by you through your choice of recipient, target app or target service; the respective provider is responsible for processing it there. Nothing is transmitted to the Provider of the App when you share.</p>
+  <p>Conversely, you can accept spots that reach you — as one of the App's files, via the share extension (e.g. from Apple Maps), via a map link, or via coordinates in a message. The processing takes place on your device; an accepted spot is treated like a spot you saved yourself (section 4.1).</p>
+  <p>Please bear in mind: a shared spot discloses a position. Only pass spots on to recipients who are meant to have that information.</p>
+  <div class="meta">
+    <p><strong>Legal basis:</strong> Art. 6 (1) (b) GDPR (provision of the App function you invoked).</p>
+  </div>
+  <h3 id="pp-5">5. Device functions and system permissions</h3>
+  <h4 id="pp-5-1">5.1 Location</h4>
+  <p>The App asks for permission to access your device's location <strong>while it is in use</strong> ("While Using the App"). The location is used to save a spot or waypoint, to calculate the direction and distance to a saved spot, to show your position and heading on the map, and to detect arrival at a spot.</p>
+  <p>The following applies:</p>
+  <ul>
+    <li>Location determination runs only while the App is open in the foreground. There is no background location tracking, no continuous recording of routes and no creation of movement profiles. The only things recorded are what you yourself save as a spot or waypoint.</li>
+    <li>The location data is not transmitted to the Provider or to any third party.</li>
+    <li>For usable guidance, the App needs your <strong>precise</strong> location. If you have granted only the approximate location, the App asks — via the system dialogue — for temporary permission to use the precise location. The operating system grants this permission for a limited time; the App cannot extend it.</li>
+    <li>After saving a spot, the App continues measuring for a few seconds and replaces the stored value if a more accurate measurement of the same place becomes available. The measurements discarded in the process are not stored permanently.</li>
+  </ul>
+  <p>Granting the permission is voluntary. Without location permission, the App cannot perform its core function — saving a spot and finding your way back.</p>
+  <div class="meta">
+    <p><strong>Legal basis:</strong> Art. 6 (1) (a) GDPR (consent, given via the operating system's permission dialogue).</p>
+    <p><strong>Withdrawal:</strong> At any time via the system settings (Settings → Privacy &amp; Security → Location Services → SpotTrackR). Withdrawal does not affect the lawfulness of processing carried out up to that point.</p>
+  </div>
+  <h4 id="pp-5-2">5.2 Camera</h4>
+  <p>On devices with a camera, the App can overlay the direction to your target on the live camera image. For this purpose, the App requests the system permission for the camera the first time you open this view.</p>
+  <p>The following applies:</p>
+  <ul>
+    <li>The camera image is shown live on the screen only. It is <strong>not</strong> recorded, not stored, not analysed and not transmitted — neither to the Provider nor to any third party.</li>
+    <li>No image recognition, face recognition or object recognition takes place. The overlay is calculated solely from location and attitude data.</li>
+    <li>When you leave the view, the camera is shut down immediately.</li>
+  </ul>
+  <p>Granting the permission is voluntary. Without camera permission, the App remains fully usable; only the camera overlay is unavailable.</p>
+  <div class="meta">
+    <p><strong>Legal basis:</strong> Art. 6 (1) (a) GDPR (consent, given via the operating system's permission dialogue).</p>
+    <p><strong>Withdrawal:</strong> At any time via the system settings (Settings → Privacy &amp; Security → Camera → SpotTrackR).</p>
+  </div>
+  <h4 id="pp-5-3">5.3 Compass and motion sensors</h4>
+  <p>For the direction indicator, the App uses the device's magnetic compass as well as its attitude and motion sensors. These values are processed only transiently in memory, in order to orient the arrow, the compass, the map and the camera overlay. They are not stored and not transmitted. No separate system permission is required for this.</p>
+  <div class="meta">
+    <p><strong>Legal basis:</strong> Art. 6 (1) (b) GDPR.</p>
+  </div>
+  <h4 id="pp-5-4">5.4 No access to photos, contacts, calendar, microphone, health data or notifications</h4>
+  <p>The App requests no access to your photo library, your contacts, your calendar, your reminders, your microphone, your address book or health data. The App sends no notifications and does not request the notification permission. No audio or video recordings are made.</p>
+  <h3 id="pp-6">6. Apple services used</h3>
+  <p>The App uses only services and functions of the Apple platform. The Provider operates no server of its own, nor any proxy service. No third-party APIs or SDKs are used.</p>
+  <h4 id="pp-6-1">6.1 Apple MapKit / Apple Maps (map display)</h4>
+  <p>For the optional map view, the App loads map material via Apple MapKit (Apple Inc., One Apple Park Way, Cupertino, CA 95014, USA, or, for users in the European Economic Area, Apple Distribution International Ltd., Hollyhill Industrial Estate, Hollyhill, Cork, Ireland). The request is made directly from your device to Apple; for technical reasons, the map section displayed and your IP address are transmitted to Apple. The Provider receives neither the requests nor the results.</p>
+  <p>The map is the only feature of the App that uses an internet connection. If no connection is available, the map is not offered; all other features work entirely offline. Your saved spots are not transmitted to Apple as content during map display; they are drawn locally onto the loaded map. The map section loaded does, however, inevitably depend on your position and on the spot you wish to return to.</p>
+  <div class="meta">
+    <p><strong>Legal basis:</strong> Art. 6 (1) (b) GDPR (provision of the App function you invoked).</p>
+    <p><strong>Transfer to third countries:</strong> Apple may process requests on servers in the USA, relying on standard contractual clauses pursuant to Art. 46 GDPR as well as on the EU-U.S. Data Privacy Framework.</p>
+    <p><strong>Further information:</strong> <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></p>
+  </div>
+  <h4 id="pp-6-2">6.2 Map link when sharing</h4>
+  <p>If you share a spot as text, the text contains a link to Apple Maps (maps.apple.com) in addition to the coordinates. The link is generated on your device; nothing is transmitted when it is generated. A connection to Apple arises only when you or the recipient open the link. Apple is responsible for the processing that takes place there.</p>
+  <h4 id="pp-6-3">6.3 In-app purchases (Apple App Store / StoreKit)</h4>
+  <p>The App is free of charge. It offers the option of giving the developer a voluntary tip. This is processed exclusively via the Apple App Store; for this purpose, the App retrieves the product details (name, price) from Apple and passes a purchase request to the system. For technical reasons, your IP address and details of your Apple Account are transmitted to Apple in the process.</p>
+  <p>The Provider receives no payment data, no Apple ID, no name and no other account data. All that is noted locally on the device is whether a tip has been given and when you were last asked, so that the App does not ask again; this note does not leave the device. As these are consumable products, no entitlement is stored and no restoration of purchases is offered.</p>
+  <div class="meta">
+    <p><strong>Legal basis:</strong> Art. 6 (1) (b) GDPR (performance of a contract).</p>
+    <p><strong>Responsible for payment processing:</strong> Apple; Apple's privacy provisions apply.</p>
+  </div>
+  <h4 id="pp-6-4">6.4 App Store statistics and crash reports</h4>
+  <p>Within App Store Connect, Apple provides the Provider exclusively with <strong>aggregated and anonymised</strong> statistics (e.g. number of downloads, crash frequencies). It is not possible for the Provider to draw conclusions about individual persons from these. Whether your device sends diagnostic and usage data to Apple, and whether this is shared with developers, is controlled by you in the system settings (Settings → Privacy &amp; Security → Analytics &amp; Improvements). The App does not use any crash or error reporting system of its own.</p>
+  <h3 id="pp-7">7. No analytics, no tracking, no advertising</h3>
+  <p>The App contains no analytics, tracking, attribution or advertising services and no advertising SDKs. No advertising or device identifiers (e.g. IDFA) are read, no App Tracking Transparency dialogue is shown, and no usage profiles are created. The App records no movement profiles. Data is not sold or otherwise passed on to third parties for advertising purposes.</p>
+  <h3 id="pp-8">8. Storage periods and deletion</h3>
+  <ul>
+    <li><strong>Saved spots, waypoints, routes and settings:</strong> until you delete, overwrite or reset them in the App, and at the latest until the App is uninstalled. Individual slots can be deleted via the menu of the respective tile; "Reset all spots" in the settings removes all spots.</li>
+    <li><strong>Location, compass and motion data of the current session:</strong> transiently in memory only, until the App is closed or sent to the background.</li>
+    <li><strong>Camera image:</strong> only while it is displayed; it is not stored.</li>
+    <li><strong>Requests to MapKit:</strong> no permanent storage by the Provider. Apple's own statements apply to storage periods at Apple.</li>
+    <li><strong>Tips:</strong> the local note remains on the device until the App is uninstalled. The purchase information remains with Apple within the statutory retention periods.</li>
+  </ul>
+  <p>You can delete all locally stored data completely by uninstalling the App. If you have created backups of your device, the data may still be contained there until the backup in question is replaced or deleted.</p>
+  <h3 id="pp-9">9. Recipients of the data</h3>
+  <p>Personal data is not passed on to third parties unless this is necessary to provide the functions described above (Apple as operator of the platform services used) or there is a legal obligation to do so. If you share a spot yourself, you determine the recipient (section 4.3). No processors are engaged on the Provider's own behalf; there is no server or hosting provider of its own for app data.</p>
+  <h3 id="pp-10">10. Data security</h3>
+  <p>Data transmission to the Apple services used takes place exclusively in encrypted form (TLS). The data stored locally on your device is protected by the operating system's protective mechanisms, in particular device encryption and your device's passcode or biometric protection. Please keep your device and operating system up to date and secure it with a device passcode — saved spots are location information and therefore worth protecting.</p>
+  <h3 id="pp-11">11. Rights of data subjects</h3>
+  <p>You have the following rights vis-à-vis the controller:</p>
+  <ul>
+    <li>Right of access (Art. 15 GDPR)</li>
+    <li>Right to rectification (Art. 16 GDPR)</li>
+    <li>Right to erasure (Art. 17 GDPR)</li>
+    <li>Right to restriction of processing (Art. 18 GDPR)</li>
+    <li>Right to data portability (Art. 20 GDPR)</li>
+    <li>Right to object (Art. 21 GDPR)</li>
+  </ul>
+  <p>Please address enquiries to: <a href="mailto:privacy@rocktrackr.de">privacy@rocktrackr.de</a></p>
+  <p>Please note: as the Provider maintains no user accounts and receives none of your content, it will as a rule hold no data amenable to access, rectification or erasure. The data stored in the App is always in your own hands.</p>
+  <p><strong>Withdrawal of consent:</strong> Insofar as processing is based on consent (Art. 6 (1) (a) GDPR) — in particular for location and camera — you may withdraw it at any time with effect for the future, in particular via the system settings for app permissions. The lawfulness of processing carried out up to the withdrawal remains unaffected.</p>
+  <p><strong>Right to lodge a complaint:</strong> You have the right to lodge a complaint with a data protection supervisory authority (Art. 77 GDPR). The competent authority is the Independent Centre for Privacy Protection Schleswig-Holstein (ULD), Holstenstraße 98, 24103 Kiel, Germany, www.datenschutzzentrum.de.</p>
+  <h3 id="pp-12">12. Children</h3>
+  <p>The App is not specifically directed at children and does not knowingly collect personal data from children. Minors should use the App only with the consent of a legal guardian; in-app purchases (tips) require that guardian's express permission.</p>
+  <h3 id="pp-13">13. Changes to this privacy policy</h3>
+  <p>This policy may be adapted to reflect changes to the App, to the Apple services used, or to the legal situation. The version available at the time of your use applies. The date of the last update is stated below.</p>
+  <hr>
+  <p style="color:var(--fg-muted)">Version: 13 September 2026 — SpotTrackR</p>
+</section>
+
+
+<!-- ==================== IMPRESSUM ==================== -->
+<section class="doc" id="imprint" aria-labelledby="imp-titel">
+  <h2 id="imp-titel">Legal Notice (Imprint)</h2>
+  <p class="lead" style="color:var(--fg-muted)">Version: 13 September 2026</p>
+  <p class="translation-note">This is a translation of the German original. In the event of discrepancies, the German version prevails.</p>
+
+  <h3 id="imp-1">Information pursuant to § 5 DDG (German Digital Services Act)</h3>
+  <address>
+    Volker Herrmann<br>
+    Am Dorfteich 11<br>
+    25462 Rellingen<br>
+    Germany
+  </address>
+  <h3 id="imp-2">Contact</h3>
+  <p>Phone: <a href="tel:+4915751598959">+49 (0) 157 515 989 59</a><br>
+     E-mail: <a href="mailto:contact@rocktrackr.de">contact@rocktrackr.de</a></p>
+  <h3 id="imp-3">Responsible for the content pursuant to § 18 (2) MStV (German Interstate Media Treaty)</h3>
+  <address>
+    Volker Herrmann<br>
+    Am Dorfteich 11<br>
+    25462 Rellingen<br>
+    Germany
+  </address>
+  <h3 id="imp-4">VAT</h3>
+  <p>No VAT identification number (private individual, no registered business).</p>
+  <h3 id="imp-5">Consumer dispute resolution / universal arbitration board</h3>
+  <p>The European Commission provides a platform for online dispute resolution at <a href="https://ec.europa.eu/consumers/odr/">https://ec.europa.eu/consumers/odr/</a>.</p>
+  <p>We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board.</p>
+  <h3 id="imp-6">Objection to advertising e-mails</h3>
+  <p>We hereby object to the use of contact data published in fulfilment of the legal obligation to provide a legal notice for the purpose of sending unsolicited advertising and information material. The operator of these pages expressly reserves the right to take legal action in the event of the unsolicited sending of advertising information, for example by spam e-mail.</p>
+  <h3 id="imp-7">Legal notice on trademarks and images</h3>
+  <p>Apple, the Apple logo, iPhone, iPad, Mac, iOS, iPadOS, macOS, iCloud, App Store, Apple Maps, MapKit, Core Location and StoreKit are trademarks or registered trademarks of Apple Inc. Other names, trademarks and logos used on this website and in the app screenshots are the property of their respective owners. They are mentioned solely for the purpose of describing and illustrating the functions of the "SpotTrackR" app (referential use).</p>
+  <p>There is no business relationship, partnership, sponsorship or official authorisation between the provider of this app and the companies or rights holders named.</p>
+  <p>The places, coordinates, distances, names and routes shown in the app screenshots are sample data and serve solely to illustrate the range of functions. Insofar as map sections are visible in screenshots, the map material is provided by Apple; insofar as photographs or camera images are visible, these were created personally by the provider of the app.</p>
+  <h3 id="imp-8">Liability for content</h3>
+  <p>As a service provider, I am responsible for my own content on these pages in accordance with § 7 (1) DDG and general legislation. Pursuant to §§ 8 to 10 DDG, however, I am not obliged as a service provider to monitor transmitted or stored third-party information or to investigate circumstances that indicate unlawful activity. Obligations to remove or block the use of information under general legislation remain unaffected. Liability in this respect is, however, only possible from the point in time at which a specific legal infringement becomes known. Upon becoming aware of any such legal infringements, I will remove the content concerned immediately.</p>
+  <h3 id="imp-9">Liability for links</h3>
+  <p>My offering contains links to external third-party websites over whose content I have no influence. I therefore cannot accept any responsibility for such third-party content. The respective provider or operator of the pages is always responsible for the content of the linked pages. The linked pages were checked for possible legal infringements at the time of linking; unlawful content was not discernible at the time of linking. Permanent monitoring of the content of the linked pages is not reasonable without concrete indications of a legal infringement. Upon becoming aware of legal infringements, I will remove such links immediately.</p>
+  <h3 id="imp-10">Copyright</h3>
+  <p>The content and works created by the site operator on these pages are subject to German copyright law. The reproduction, editing, distribution and any kind of use outside the limits of copyright law require the written consent of the respective author or creator. Downloads and copies of this page are permitted for private, non-commercial use only.</p>
+</section>
+
+</main>
+
+<footer class="page" id="contact">
+  <p><strong>Volker Herrmann</strong></p>
+  <p>Am Dorfteich 11, 25462 Rellingen, Germany</p>
+  <p>Phone: <a href="tel:+4915751598959">+49 (0) 157 515 989 59</a></p>
+  <p>General: <a href="mailto:contact@rocktrackr.de">contact@rocktrackr.de</a> · Privacy: <a href="mailto:privacy@rocktrackr.de">privacy@rocktrackr.de</a></p>
+  <p style="margin-top:1rem"><a href="#terms">Terms</a> · <a href="#privacy">Privacy Policy</a> · <a href="#imprint">Legal Notice</a> · <a href="support-en.html">Support</a> · <a href="index.html" hreflang="de" lang="de">Deutsch</a></p>
+  <p style="margin-top:1rem">SpotTrackR – version of this document: 13 September 2026</p>
+</footer>
+
+</div>
+
+<script>
+/* Sprachumschalter: übernimmt den aktuellen Abschnitt in die andere Sprachfassung.
+   Ohne JavaScript verlinkt der Schalter auf den Seitenanfang der anderen Datei. */
+(function () {
+  var pairs = [
+    ['agb', 'terms'], ['datenschutz', 'privacy'], ['impressum', 'imprint'],
+    ['agb-', 'terms-'], ['ds-', 'pp-'], ['imp-', 'imp-']
+  ];
+  var link = document.getElementById('lang-switch');
+  if (!link || !link.dataset || !link.dataset.base) return;
+  var fromDe = document.documentElement.lang === 'de';
+  function convert(hash) {
+    for (var i = 0; i < pairs.length; i++) {
+      var from = pairs[i][fromDe ? 0 : 1];
+      var to = pairs[i][fromDe ? 1 : 0];
+      if (hash === from) return to;
+      if (from.charAt(from.length - 1) === '-' && hash.indexOf(from) === 0) {
+        return to + hash.slice(from.length);
+      }
+    }
+    return '';
+  }
+  function sync() {
+    var hash = (location.hash || '').replace('#', '');
+    var target = hash ? convert(hash) : '';
+    link.setAttribute('href', link.dataset.base + (target ? '#' + target : ''));
+  }
+  sync();
+  window.addEventListener('hashchange', sync);
+})();
+</script>
+
+</body>
+</html>
